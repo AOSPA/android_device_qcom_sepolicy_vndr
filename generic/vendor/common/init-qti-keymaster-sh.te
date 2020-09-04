@@ -1,4 +1,4 @@
-# Copyright (c) 2018, The Linux Foundation. All rights reserved.
+# Copyright (c) 2020, The Linux Foundation. All rights reserved.
 
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,18 +25,14 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#============= system_app ==============
-userdebug_or_eng(`
-  # Rules for QSensors Test Application
-  allow system_app sensors_device:chr_file getattr;
-  allow system_app socket_device:dir read;
+type vendor_init-qti-keymaster-sh, domain;
+type vendor_init-qti-keymaster-sh_exec, exec_type, vendor_file_type, file_type;
 
-  allow system_app self:socket create_socket_perms_no_ioctl;
-')
+init_daemon_domain(vendor_init-qti-keymaster-sh)
 
-userdebug_or_eng(`
-  # allow system_app access diag hal
-  diag_use(system_app)
-  hal_client_domain(system_app, vendor_hal_diaghal)
-  hal_client_domain(system_app, hal_allocator)
-')
+# Set vendor.keymaster.strongbox.version to 40 or 41
+set_prop(vendor_init-qti-keymaster-sh, vendor_km_strongbox_version_prop);
+set_prop(vendor_init-qti-keymaster-sh, vendor_disable_spu_prop)
+
+allow vendor_init-qti-keymaster-sh vendor_shell_exec:file rx_file_perms;
+allow vendor_init-qti-keymaster-sh vendor_toolbox_exec:file rx_file_perms;
