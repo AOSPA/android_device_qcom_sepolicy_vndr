@@ -1,4 +1,4 @@
-# Copyright (c) 2015-2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -25,24 +25,27 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#Add new domain for pdt apps
-user=system seinfo=platform name=.pdtapps domain=vendor_pdt_app type=system_app_data_file
+type vendor_hang_guard, domain, mlstrustedsubject;
+type vendor_hang_guard_exec, exec_type, vendor_file_type, file_type;
 
-#Add new domain for usta app
-user=_app seinfo=platform name=com.qualcomm.qti.usta domain=vendor_usta_app type=app_data_file levelFrom=all
+init_daemon_domain(vendor_hang_guard)
 
-#Add new domain for qsta app
-user=_app seinfo=platform name=com.qualcomm.qti.sensors.qsensortest domain=vendor_qsta_app type=app_data_file
+userdebug_or_eng(`
+  allow vendor_hang_guard self:global_capability_class_set kill;
+  allow vendor_hang_guard kmsg_device:chr_file w_file_perms;
+  allow vendor_hang_guard domain:process { signal sigstop sigkill };
 
-#Add new domain for ustaservice app
-# Needed for USTA test app
-user=system seinfo=platform name=com.qualcomm.qti.ustaservice domain=vendor_ustaservice_app type=system_app_data_file
+  # sh
+  allow vendor_hang_guard { vendor_shell_exec vendor_toolbox_exec }:file rx_file_perms;
 
-#Add new domain for LibsochelperTest app
-user=_app seinfo=platform name=com.qualcomm.qti.libsochelpertest domain=vendor_libsochelpertest_app type=app_data_file levelFrom=all
+  # look through /proc
+  allow vendor_hang_guard domain:dir r_dir_perms;
+  allow vendor_hang_guard domain:file r_file_perms;
+  allow vendor_hang_guard domain:lnk_file read;
 
-#Add new domain for qtidiagservices app
-user=system seinfo=platform name=com.qti.diagservices domain=qtidiagservices_app type=system_app_data_file
+  # write into sysrq
+  allow vendor_hang_guard proc_sysrq:file w_file_perms;
 
-#Add new domain for snapcam app
-user=_app isPrivApp=true name=org.codeaurora.snapcam domain=vendor_snapcam_app type=app_data_file levelFrom=all
+  # reboot
+  set_prop(vendor_hang_guard, powerctl_prop)
+')
