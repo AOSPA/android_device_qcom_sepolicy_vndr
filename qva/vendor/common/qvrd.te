@@ -30,15 +30,13 @@
 #
 
 userdebug_or_eng(` allow vendor_qvrd vendor_diag_device:chr_file rw_file_perms');
-#r_dir_file(vendor_qvrd, vendor_file)
-r_dir_file(vendor_qvrd, vendor_sysfs_kgsl)
 
 #
 # Sensors
 #
 
 # Allow access to ADSP & SLPI
-allow vendor_qvrd { ion_device vendor_qdsp_device vendor_dsp_device vendor_xdsp_device }:chr_file r_file_perms;
+allow vendor_qvrd { ion_device vendor_qdsp_device }:chr_file r_file_perms;
 
 
 #
@@ -76,7 +74,7 @@ allow vendor_qvrd vendor_qti_debugfs:file rw_file_perms;
 ')
 
 # Allow access to kgsl sysfs nodes for performance optimization
-allow vendor_qvrd vendor_sysfs_kgsl:file r_file_perms;
+r_dir_file(vendor_qvrd, vendor_sysfs_kgsl)
 
 # Allow access to qvr_external_sensor sysfs nodes for external viewers
 allow vendor_qvrd vendor_sysfs_qvr_external_sensor:dir r_dir_perms;
@@ -92,6 +90,8 @@ get_prop(vendor_qvrd, vendor_qvrd_prop)
 get_prop(vendor_qvrd, vendor_qvr_persist_prop)
 get_prop(vendor_qvrd, vendor_qvrd_persist_prop)
 allow vendor_qvrd video_device:chr_file w_file_perms;
+
+allow vendor_qvrd tombstoned_crash_socket:sock_file write;
 
 #allow qvrd to access hid event
 allow vendor_qvrd vendor_sysfs_usb_node:dir r_dir_perms;
