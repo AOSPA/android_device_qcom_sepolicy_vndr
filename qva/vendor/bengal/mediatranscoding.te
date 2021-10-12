@@ -1,4 +1,4 @@
-# Copyright (c) 2018,2020 The Linux Foundation. All rights reserved.
+# Copyright (c) 2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -13,7 +13,7 @@
 #       contributors may be used to endorse or promote products derived
 #       from this software without specific prior written permission.
 #
-# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# THIS SOFTWARE IS PROVIDED"AS IS" AND ANY EXPRESS OR IMPLIED
 # WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 # MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
 # ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
@@ -24,36 +24,7 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#vendor_ims rtp service
-type vendor_hal_imsrtp, domain;
-type vendor_hal_imsrtp_exec, exec_type, vendor_file_type, file_type;
 
-# Started by init
-init_daemon_domain(vendor_hal_imsrtp)
-net_domain(vendor_hal_imsrtp)
-
-hwbinder_use(vendor_hal_imsrtp)
-get_prop(vendor_hal_imsrtp, hwservicemanager_prop)
-add_hwservice(vendor_hal_imsrtp, vendor_hal_imsrtp_hwservice)
-
-allow vendor_hal_imsrtp self: qipcrtr_socket  create_socket_perms_no_ioctl;
-unix_socket_connect(vendor_hal_imsrtp, vendor_ims, vendor_ims)
-
-#allow ims_rtp_daemon to connect to server socket hosted in imsdaemon
-unix_socket_connect(vendor_hal_imsrtp, vendor_ims, vendor_ims_service)
-
-allow vendor_hal_imsrtp self:capability net_bind_service;
-
-allow vendor_hal_imsrtp ion_device:chr_file r_file_perms;
-allow vendor_hal_imsrtp vendor_sysfs_data:file r_file_perms;
-r_dir_file(vendor_hal_imsrtp, vendor_sysfs_diag)
-
-get_prop(vendor_hal_imsrtp, vendor_ims_prop)
-binder_call(vendor_hal_imsrtp, vendor_qtelephony)
-
-userdebug_or_eng('
-binder_call(vendor_hal_imsrtp, vtloopback_app)
-')
-
-crash_dump_fallback(vendor_hal_imsrtp)
+#Allow mediatranscoder to access hal_allocator
+hal_client_domain(mediatranscoding, hal_allocator)
 
