@@ -36,6 +36,7 @@ vendor.qti.ims.factory::IImsFactory                             u:object_r:vendo
 vendor.qti.hardware.data.connection::IDataConnection            u:object_r:vendor_hal_dataconnection_hwservice:s0
 vendor.qti.hardware.cacert::IService                            u:object_r:vendor_hal_cacert_hwservice:s0
 vendor.display.config::IDisplayConfig                           u:object_r:vendor_hal_display_config_hwservice:s0
+vendor.qti.hardware.display.config.IDisplayConfig/default u:object_r:vendor_hal_vnddisplayconfig_service:s0
 vendor.display.color::IDisplayColor                             u:object_r:vendor_hal_display_color_hwservice:s0
 vendor.display.postproc::IDisplayPostproc                       u:object_r:vendor_hal_display_postproc_hwservice:s0
 vendor.qti.hardware.data.iwlan::IIWlan                          u:object_r:vendor_hal_iwlan_hwservice:s0
