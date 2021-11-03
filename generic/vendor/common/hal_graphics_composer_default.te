@@ -93,6 +93,8 @@ allow hal_graphics_composer_default vendor_pps_socket:sock_file write;
 add_hwservice(hal_graphics_composer_server, vendor_hal_display_config_hwservice);
 # allow composer client to find display config service.
 allow hal_graphics_composer_client vendor_hal_display_config_hwservice:hwservice_manager find;
+# allow composer client to find aidl display config service.
+allow hal_graphics_composer_client vendor_hal_vnddisplayconfig_service:service_manager find;
 
 # Allow qdcmss socket access
 unix_socket_connect(hal_graphics_composer_default, vendor_qdcmsocket, vendor_qdcm-ss)
@@ -107,4 +109,5 @@ allowxperm hal_graphics_composer self:{ socket qipcrtr_socket } ioctl msm_sock_i
 
 # Allow display config aidl service
 hal_attribute_service(hal_graphics_composer, vendor_hal_displayconfig_service);
+hal_attribute_service(hal_graphics_composer, vendor_hal_vnddisplayconfig_service);
 binder_call(hal_graphics_composer, servicemanager);
