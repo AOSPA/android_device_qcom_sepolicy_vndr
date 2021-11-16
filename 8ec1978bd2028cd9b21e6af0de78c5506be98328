@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f4804cc_5f804546",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000427
+      },
+      "writtenOn": "2021-11-16T21:16:58Z",
+      "side": 1,
+      "message": "the attributes are defined in qssi policy, update for that.",
+      "revId": "8ec1978bd2028cd9b21e6af0de78c5506be98328",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
