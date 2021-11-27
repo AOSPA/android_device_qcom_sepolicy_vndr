@@ -26,4 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # WLAN dynamic detect
-system_vendor_config_prop(vendor_qcom_wlan_prop)
+type vendor_qcom_wlan_prop, property_type;
