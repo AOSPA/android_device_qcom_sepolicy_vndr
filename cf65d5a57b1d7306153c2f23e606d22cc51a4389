@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad45d970_7bfb9fc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000541
+      },
+      "writtenOn": "2021-11-27T13:10:10Z",
+      "side": 1,
+      "message": "libsepol.report_failure: neverallow on line 29 of device/qcom/sepolicy_vndr/qva/vendor/msmnile/property.te (or line 111793 of policy.conf) violated by allow vendor_init-qcom-wifi-sh vendor_qcom_wlan_prop:property_service { set };\nlibsepol.check_assertions: 1 neverallow failures occurred\nError while expanding policy",
+      "revId": "cf65d5a57b1d7306153c2f23e606d22cc51a4389",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
