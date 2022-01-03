@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7fdcb850_7cf74010",
+        "filename": "legacy/vendor/common/init-qti-ims-sh.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000427
+      },
+      "writtenOn": "2022-01-03T03:20:39Z",
+      "side": 0,
+      "message": "use build_prop instead of exported2_default_prop",
+      "revId": "ce4f3f52a32bbf3513360931d64a1f3f2ea41192",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
