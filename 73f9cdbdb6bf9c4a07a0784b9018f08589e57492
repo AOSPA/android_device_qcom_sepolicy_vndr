@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cfd028f_c1e6292e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2022-01-04T23:05:30Z",
+      "side": 1,
+      "message": "duplicate. we have a open patch for that already",
+      "revId": "73f9cdbdb6bf9c4a07a0784b9018f08589e57492",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
