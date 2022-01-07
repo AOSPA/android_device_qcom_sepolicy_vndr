@@ -16,6 +16,24 @@
       "message": "use build_prop instead of exported2_default_prop",
       "revId": "ce4f3f52a32bbf3513360931d64a1f3f2ea41192",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "904a0756_242c6101",
+        "filename": "legacy/vendor/common/init-qti-ims-sh.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-01-07T16:34:00Z",
+      "side": 0,
+      "message": "-1 to your comment. I don\u0027t think we should edit upstream commits. I\u0027d make that a separate commit to make it easier to understand what we\u0027re changing and easier to pick in the future.",
+      "parentUuid": "7fdcb850_7cf74010",
+      "revId": "ce4f3f52a32bbf3513360931d64a1f3f2ea41192",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
