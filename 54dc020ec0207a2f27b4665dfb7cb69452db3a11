@@ -33,6 +33,23 @@
       "message": "looks fine",
       "revId": "54dc020ec0207a2f27b4665dfb7cb69452db3a11",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "535ce7c0_608f18db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-01-24T11:57:15Z",
+      "side": 1,
+      "message": "got the same on kona vendor radio",
+      "revId": "54dc020ec0207a2f27b4665dfb7cb69452db3a11",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
