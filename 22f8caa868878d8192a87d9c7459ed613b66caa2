@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88e9a1e0_91f44a07",
+        "filename": "generic/vendor/common/surfaceflinger.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2022-01-28T22:13:22Z",
+      "side": 1,
+      "message": "semicolon",
+      "revId": "22f8caa868878d8192a87d9c7459ed613b66caa2",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
