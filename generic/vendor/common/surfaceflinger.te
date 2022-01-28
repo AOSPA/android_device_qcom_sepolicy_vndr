@@ -39,4 +39,6 @@ hal_client_domain(surfaceflinger, vendor_hal_perf)
 
 r_dir_file(surfaceflinger, vendor_sysfs_kgsl)
 
+allow surfaceflinger vendor_hal_vnddisplayconfig_service:service_manager find;
+
 dontaudit surfaceflinger vendor_hal_qspmhal_hwservice:hwservice_manager find;
