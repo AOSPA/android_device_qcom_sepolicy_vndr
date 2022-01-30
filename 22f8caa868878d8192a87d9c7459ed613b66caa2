@@ -16,6 +16,24 @@
       "message": "semicolon",
       "revId": "22f8caa868878d8192a87d9c7459ed613b66caa2",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "add438ff_5e772ccd",
+        "filename": "generic/vendor/common/surfaceflinger.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2022-01-30T17:04:45Z",
+      "side": 1,
+      "message": "add_service(surfaceflinger, vendor_hal_vnddisplayconfig_service)",
+      "parentUuid": "88e9a1e0_91f44a07",
+      "revId": "22f8caa868878d8192a87d9c7459ed613b66caa2",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
