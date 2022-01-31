@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08486645_2459b060",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-01-31T06:47:37Z",
+      "side": 1,
+      "message": "check for any duplicate sysfs definitions in your device tree",
+      "revId": "ea24d99b9650f4dd234e3e90ad00c68ac988b5b4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
