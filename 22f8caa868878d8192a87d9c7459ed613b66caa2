@@ -52,6 +52,24 @@
       "parentUuid": "add438ff_5e772ccd",
       "revId": "22f8caa868878d8192a87d9c7459ed613b66caa2",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bb36f94_f02ae9a9",
+        "filename": "generic/vendor/common/surfaceflinger.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-01-31T06:41:47Z",
+      "side": 1,
+      "message": "add_service would cause neverallows",
+      "parentUuid": "8a57a1cc_f65762a6",
+      "revId": "22f8caa868878d8192a87d9c7459ed613b66caa2",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
