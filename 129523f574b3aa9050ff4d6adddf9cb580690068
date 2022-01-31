@@ -16,6 +16,24 @@
       "message": "just blocking to discuss.\n\nhttps://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr/commit/?h\u003dsepolicy.vndr.lnx.12.0.r2-rel\u0026id\u003d0be22d60abdc201267202d0fd1e011ef01787a34 is in LA.VENDOR. should we rebase or pick instead?",
       "revId": "129523f574b3aa9050ff4d6adddf9cb580690068",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a125de3_d8432155",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-01-31T09:36:17Z",
+      "side": 1,
+      "message": "Vishal does want to switch from lahaina to wapio tags, until then it makes sense to pick it https://gerrit.aospa.co/c/AOSPA/android_device_qcom_sepolicy_vndr/+/20561",
+      "parentUuid": "601c931d_e2af2910",
+      "revId": "129523f574b3aa9050ff4d6adddf9cb580690068",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
