@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fedf98ac_a4854eaa",
+        "filename": "generic/vendor/common/hwservice_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-02-01T15:03:39Z",
+      "side": 0,
+      "message": "generic/vendor/common/hwservice_contexts\n29:vendor.qti.hardware.data.iwlan::IIWlan                          u:object_r:vendor_hal_iwlan_hwservice:s0\n\npresent here",
+      "revId": "129523f574b3aa9050ff4d6adddf9cb580690068",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2243622c_74a3e4a3",
+        "filename": "qva/vendor/common/hwservice_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-02-01T15:03:39Z",
+      "side": 0,
+      "message": "generic/vendor/common/hwservice_contexts\n31:com.qualcomm.qti.imscmservice::IImsCmService                 u:object_r:vendor_hal_imsrcsd_hwservice:s0\n\n* present here",
+      "revId": "129523f574b3aa9050ff4d6adddf9cb580690068",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
