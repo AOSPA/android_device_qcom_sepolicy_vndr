@@ -16,6 +16,24 @@
       "message": "isnt clkgate device specific, or do you want that node to be handled from common",
       "revId": "bf862f753998075be9e1ddbd87f744150b4b39b9",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e4e8ee5_7f807cea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-02-13T17:20:05Z",
+      "side": 1,
+      "message": "Path isn\u0027t device-specific and it allows device maintainers to manually set the value via post-boot.",
+      "parentUuid": "6aa55d81_238b3b86",
+      "revId": "bf862f753998075be9e1ddbd87f744150b4b39b9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
