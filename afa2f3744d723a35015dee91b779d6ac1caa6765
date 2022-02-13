@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1859f3a_6df61228",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-02-13T15:08:52Z",
+      "side": 1,
+      "message": "recommended way is to label the nodes as sysfs_wakeup instead of allowing access to generic nodes",
+      "revId": "afa2f3744d723a35015dee91b779d6ac1caa6765",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
