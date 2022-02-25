@@ -16,6 +16,24 @@
       "message": "idk how, but yes\n",
       "revId": "dbddc861887d4a341c69ffdb2976bab8395ddf86",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c8ca2c7_8db04290",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2022-02-25T18:58:37Z",
+      "side": 1,
+      "message": "Now i know how, and still yes.",
+      "parentUuid": "0de37c0b_30b54bb9",
+      "revId": "dbddc861887d4a341c69ffdb2976bab8395ddf86",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
