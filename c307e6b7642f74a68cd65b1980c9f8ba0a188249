@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fcc7134_56952d1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-02-26T08:21:53Z",
+      "side": 1,
+      "message": "GRF sucks!\n\nhttps://android-review.googlesource.com/c/platform/system/sepolicy/+/1368156",
+      "revId": "c307e6b7642f74a68cd65b1980c9f8ba0a188249",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
