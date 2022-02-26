@@ -16,6 +16,23 @@
       "message": "GRF sucks!\n\nhttps://android-review.googlesource.com/c/platform/system/sepolicy/+/1368156",
       "revId": "c307e6b7642f74a68cd65b1980c9f8ba0a188249",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cf4254f_17f3df0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-02-26T10:11:23Z",
+      "side": 1,
+      "message": "I would prefer addressing the denial by giving it access to proper label but we dont build snapcam so why not",
+      "revId": "c307e6b7642f74a68cd65b1980c9f8ba0a188249",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
