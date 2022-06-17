@@ -117,6 +117,7 @@ allow vendor_qti_init_shell graphics_device:lnk_file create_file_perms;
 allow vendor_qti_init_shell kernel:key search;
 
 allow vendor_qti_init_shell cgroup:dir add_name;
+allow vendor_qti_init_shell cgroup:file rw_file_perms;
 
 # To allow copy for mbn files
 r_dir_file(vendor_qti_init_shell, firmware_file)
