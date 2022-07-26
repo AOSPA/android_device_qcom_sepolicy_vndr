@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f798c57_9f6af59e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-07-26T17:11:10Z",
+      "side": 1,
+      "message": "is technically only for newer adreno, but it doesn\u0027t make sense addressing this in vendor/aospa",
+      "revId": "1a7f9afc1f0e50e39fc5820977405e85ee082643",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
