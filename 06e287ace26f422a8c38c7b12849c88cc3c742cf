@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03c510fb_f79d75c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2022-08-31T23:56:48Z",
+      "side": 1,
+      "message": "Please don\u0027t edit the main repository for additions only. I\u0027d prefer for this to be labeled in our SEPolicy repository.",
+      "revId": "06e287ace26f422a8c38c7b12849c88cc3c742cf",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
