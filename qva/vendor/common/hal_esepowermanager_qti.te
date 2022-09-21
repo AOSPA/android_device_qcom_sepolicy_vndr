@@ -44,6 +44,9 @@ allow vendor_hal_esepowermanager_qti {
 # allow esepmdaemon to load firmware images
 r_dir_file(vendor_hal_esepowermanager_qti, firmware_file)
 
+# Allow esepmdaemon to interract with ion_device
+allow vendor_hal_esepowermanager_qti ion_device:chr_file r_file_perms;
+
 # Allow esepmdaemon to interract with qseecom
 allow vendor_hal_esepowermanager_qti tee_device:chr_file rw_file_perms;
 
