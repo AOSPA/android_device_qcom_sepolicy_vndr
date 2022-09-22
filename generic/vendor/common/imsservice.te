@@ -46,11 +46,15 @@ allow vendor_ims_service ion_device:chr_file r_file_perms;
 
 unix_socket_connect(vendor_ims_service, vendor_cnd, vendor_cnd)
 
-allow vendor_ims_service self: { socket qipcrtr_socket } create_socket_perms_no_ioctl;
-allow vendor_ims_service vendor_ims_service_socket:sock_file write;
+allow vendor_ims_service self:{
+    netlink_generic_socket
+    qipcrtr_socket
+    socket
+    tipc_socket
+} create_socket_perms_no_ioctl;
+unix_socket_connect(vendor_ims_service, vendor_ims_service, vendor_ims_service)
 netmgr_socket(vendor_ims_service);
 allowxperm vendor_ims_service self:udp_socket ioctl RMNET_IOCTL_EXTENDED;
-allow vendor_ims_service self:tipc_socket { create_socket_perms_no_ioctl };
 
 #diag
 userdebug_or_eng(`
