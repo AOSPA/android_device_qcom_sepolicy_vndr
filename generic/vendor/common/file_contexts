@@ -119,6 +119,7 @@
 # dev socket nodes
 /dev/socket/chre                                u:object_r:vendor_chre_socket:s0
 /dev/socket/oemlock                             u:object_r:vendor_hal_bootctl_socket:s0
+/dev/socket/ims_qmid                            u:object_r:vendor_ims_service_socket:s0
 /dev/socket/ipacm_log_file                      u:object_r:vendor_ipacm_socket:s0
 /dev/socket/cnd                                 u:object_r:vendor_cnd_socket:s0
 /dev/socket/ims_datad                           u:object_r:vendor_ims_service_socket:s0
@@ -233,6 +234,8 @@
 /vendor/bin/lowi-server         u:object_r:vendor_location_exec:s0
 /vendor/bin/xtra-daemon         u:object_r:vendor_location_exec:s0
 /vendor/bin/pd-mapper           u:object_r:vendor_pd_mapper_exec:s0
+/vendor/bin/imsqmidaemon        u:object_r:vendor_ims_service_exec:s0
+/vendor/bin/imsdatadaemon       u:object_r:vendor_ims_service_exec:s0
 /vendor/bin/ims_rtp_daemon      u:object_r:vendor_hal_imsrtp_exec:s0
 /vendor/bin/mstatdaemon			u:object_r:vendor_hal_mstatservice_exec:s0
 /vendor/bin/imsdaemon           u:object_r:vendor_ims_service_exec:s0
@@ -245,6 +248,7 @@
 /vendor/bin/hw/android\.hardware\.usb@1\.1-service.crosshatch             u:object_r:hal_usb_default_exec:s0
 /vendor/bin/chre                u:object_r:vendor_chre_exec:s0
 /vendor/bin/time_daemon         u:object_r:vendor_time_daemon_exec:s0
+/vendor/bin/imsrcsd             u:object_r:vendor_ims_service_exec:s0
 /vendor/bin/tloc_daemon         u:object_r:vendor_tlocd_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service        u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service        u:object_r:hal_power_default_exec:s0
