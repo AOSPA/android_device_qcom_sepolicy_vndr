@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18595de4_5b8a5407",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-10-23T13:29:36Z",
+      "side": 1,
+      "message": "https://github.com/gotenksIN/android_device_qcom_sepolicy_vndr/commit/bb390989ee02d24978bdfa18fb40295e0db6623c addressed in this",
+      "revId": "83b183d558073acef40ee68322e9b86efb6799c9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
