@@ -16,6 +16,24 @@
       "message": "https://gerrit.aospa.co/c/AOSPA/android_device_qcom_sepolicy_vndr/+/24650\n\nso do I abandon this?",
       "revId": "aa70bf9ad8e0066f048bb3d7f16f3ad2effb5d3f",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64693647_3373aa4d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000737
+      },
+      "writtenOn": "2022-10-26T13:47:15Z",
+      "side": 1,
+      "message": "Oh, I hadn\u0027t seen this before, otherwise I would have pushed it to your commit. well, everything is already here, I think we can merge.",
+      "parentUuid": "b9a09c61_3ea33c99",
+      "revId": "aa70bf9ad8e0066f048bb3d7f16f3ad2effb5d3f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
