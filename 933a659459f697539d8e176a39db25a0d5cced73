@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f29ab341_7988bd27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2022-10-27T05:32:01Z",
+      "side": 1,
+      "message": "do other devices need this? if not, we shouldn\u0027t do this here.",
+      "revId": "933a659459f697539d8e176a39db25a0d5cced73",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
