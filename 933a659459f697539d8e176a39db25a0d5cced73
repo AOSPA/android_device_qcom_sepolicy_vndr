@@ -16,6 +16,24 @@
       "message": "do other devices need this? if not, we shouldn\u0027t do this here.",
       "revId": "933a659459f697539d8e176a39db25a0d5cced73",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33136281_36917a08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-10-27T06:21:59Z",
+      "side": 1,
+      "message": "he missed the other two commits in chain\n340869: Revert \"sepolicy_vndr: suppress xdsp denial.\" | https://review.lineageos.org/c/LineageOS/android_device_qcom_sepolicy_vndr/+/340869\n340376: generic: msmnile: Add some misc wakeup nodes for msmnile | https://review.lineageos.org/c/LineageOS/android_device_qcom_sepolicy_vndr/+/340376\nwhich are needed, but the xdsp rule is exclusive to oplus sm8150 so will move that to device tree",
+      "parentUuid": "f29ab341_7988bd27",
+      "revId": "933a659459f697539d8e176a39db25a0d5cced73",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
