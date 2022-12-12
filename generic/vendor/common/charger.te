@@ -24,6 +24,9 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 allow charger self:capability2 wake_alarm;
 r_dir_file(charger, vendor_sysfs_battery_supply)
 r_dir_file(charger, vendor_sysfs_usb_supply)
@@ -32,6 +35,8 @@ allow charger {
     vendor_sysfs_battery_supply
     vendor_sysfs_usb_supply
 }:file w_file_perms;
+
+get_prop(charger, vendor_display_prop);
 
 dontaudit charger device:dir r_dir_perms;
 dontaudit charger self:capability sys_admin;
