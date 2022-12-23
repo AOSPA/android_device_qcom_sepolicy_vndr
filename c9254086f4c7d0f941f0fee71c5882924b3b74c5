@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de6fadb9_130133dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2022-12-23T16:44:25Z",
+      "side": 1,
+      "message": "26007: common: sepolicy: Label QTI Supplicant AIDL HAL | https://gerrit.aospa.co/c/AOSPA/android_device_qcom_common/+/26007",
+      "revId": "c9254086f4c7d0f941f0fee71c5882924b3b74c5",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
