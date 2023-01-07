@@ -35,7 +35,7 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS := \
     $(QSSI_SEPOLICY_PATH)/generic/product/private \
     $(QSSI_SEPOLICY_PATH)/qva/product/private
 
-ifeq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
+ifeq (,$(filter sdm845 sdm710 sdm660 msm8937 msm8953 msm8998, $(TARGET_BOARD_PLATFORM)))
     BOARD_VENDOR_SEPOLICY_DIRS := \
        $(BOARD_VENDOR_SEPOLICY_DIRS) \
        $(SEPOLICY_PATH) \
