@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "572f2334_b13e6521",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-02-16T16:45:27Z",
+      "side": 1,
+      "message": "is qvrd_vndr.te a device-specific policy?\n\nThis clearly doesn\u0027t do anything since all of the rules are commented out...",
+      "revId": "fe559f8831d94a213aec813805a879df4d64cb03",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
