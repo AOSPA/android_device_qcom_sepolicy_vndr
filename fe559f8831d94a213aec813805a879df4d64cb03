@@ -16,6 +16,24 @@
       "message": "is qvrd_vndr.te a device-specific policy?\n\nThis clearly doesn\u0027t do anything since all of the rules are commented out...",
       "revId": "fe559f8831d94a213aec813805a879df4d64cb03",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09c4672d_7993777b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000843
+      },
+      "writtenOn": "2023-02-16T16:50:22Z",
+      "side": 1,
+      "message": "\u003e is qvrd_vndr.te a device-specific policy?\n\nit was kona specific but apparently it moved to common.\nhttps://github.com/AOSPA/android_device_qcom_sepolicy_vndr/blob/sapphire/generic/vendor/kona/te_macros\n\nThis cries about it:\nhttps://github.com/AOSPA/android_device_qcom_common/blob/topaz/sepolicy/qva/vendor/kona/qvrd_vndr.te\n\n\n\u003e This clearly doesn\u0027t do anything since all of the rules are commented out...\n\nUnironically sepolicy build now",
+      "parentUuid": "572f2334_b13e6521",
+      "revId": "fe559f8831d94a213aec813805a879df4d64cb03",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
