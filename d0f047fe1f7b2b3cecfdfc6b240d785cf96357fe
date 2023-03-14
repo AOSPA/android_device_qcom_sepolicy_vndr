@@ -52,6 +52,23 @@
       "parentUuid": "a171da14_7ee90ae3",
       "revId": "d0f047fe1f7b2b3cecfdfc6b240d785cf96357fe",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cfc487a0_db18d961",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000551
+      },
+      "writtenOn": "2023-03-14T04:41:34Z",
+      "side": 1,
+      "message": "damn, that\u0027s new. no issues, we\u0027ll just add it to common since one rule wouldn\u0027t hurt even if early init isn\u0027t present on a few devices",
+      "revId": "d0f047fe1f7b2b3cecfdfc6b240d785cf96357fe",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
