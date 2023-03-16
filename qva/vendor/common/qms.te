@@ -156,14 +156,11 @@ allow vendor_qms hostapd_data_file:dir rw_dir_perms;
 allow vendor_qms hostapd_data_file:sock_file create_file_perms;
 allow vendor_qms { hal_wifi_hostapd_default }:unix_dgram_socket sendto;
 
-add_service(vendor_qms, vendor_qms_service)
 vndbinder_use(vendor_qms)
-allow vendor_qms vendor_qms_service:service_manager find;
 
 wakelock_use(vendor_qms)
 
 # Policies needed for SoS
-allow vendor_qms vendor_xtra_service:service_manager find;
 binder_call(vendor_qms, vendor_location_xtra_daemon)
 qesdk_access(vendor_qms)
 
