@@ -55,6 +55,8 @@ set_prop(hal_wifi_default, vendor_wifi_version)
 # allow hal_wifi to write into /proc/sys/net/ipv4
 allow hal_wifi proc_net:file write;
 
+dontaudit hal_wifi_default self:capability sys_module;
+
 # allow hal_wifi to write into /data/vendor/tombstones/wifi
 allow hal_wifi_server vendor_tombstone_data_file:dir rw_dir_perms;
 allow hal_wifi_server vendor_tombstone_data_file:file create_file_perms;
