@@ -16,6 +16,24 @@
       "message": "why ? we should not change upstream repository",
       "revId": "afaea7361e8a0775217fe13c726363655d7ca325",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0dd30708_d193a7c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000092
+      },
+      "writtenOn": "2023-05-15T02:43:55Z",
+      "side": 1,
+      "message": "Here\nhttps://github.com/AOSPA/android_device_qcom_sepolicy_vndr/blob/topaz/generic/vendor/common/file_contexts#L580",
+      "parentUuid": "758cccab_347bca14",
+      "revId": "afaea7361e8a0775217fe13c726363655d7ca325",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ],
   "submitRequirementResults": []
