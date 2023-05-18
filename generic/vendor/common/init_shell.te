@@ -123,6 +123,7 @@ r_dir_file(vendor_qti_init_shell, firmware_file)
 # /dev/block/zram0
 allow vendor_qti_init_shell block_device:dir r_dir_perms;
 allow vendor_qti_init_shell swap_block_device:blk_file rw_file_perms;
+allow vendor_qti_init_shell proc_swaps:file rw_file_perms;
 
 # /sys/kernel/mm/transparent_hugepage
 allow vendor_qti_init_shell sysfs_transparent_hugepage:file rw_file_perms;
