@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1261937_d28620a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-05-18T10:00:12Z",
+      "side": 1,
+      "message": "preferably lets not touch upstream, add here 29640: common: sepolicy: address gps denials | https://gerrit.aospa.co/c/AOSPA/android_device_qcom_common/+/29640",
+      "revId": "4978b07c06025018e9d66fe59aebf784a618a5d4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
