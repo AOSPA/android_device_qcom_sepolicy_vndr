@@ -148,6 +148,9 @@ allow vendor_qti_init_shell vendor_radio_vendor_data_file:file create_file_perms
 allow vendor_qti_init_shell vendor_mbn_data_file:dir create_dir_perms;
 allow vendor_qti_init_shell vendor_mbn_data_file:file create_file_perms;
 
+# Allow tuning UFS nodes
+allow vendor_qti_init_shell vendor_sysfs_scsi_host:file rw_file_perms;
+
 set_prop(vendor_qti_init_shell, vendor_ctl_vendor_hbtp_prop)
 
 # rules for vm_bms
