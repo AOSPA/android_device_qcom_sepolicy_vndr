@@ -50,6 +50,7 @@ allow vendor_location_xtra_daemon vendor_location_socket:lnk_file { read open ge
 allow vendor_location_xtra_daemon vendor_location_socket:sock_file create_file_perms;
 allow vendor_location_xtra_daemon vendor_location_socket:dir rw_dir_perms;
 allow vendor_location_xtra_daemon vendor_location:unix_dgram_socket { read write sendto };
+allow vendor_location_xtra_daemon vendor_location:unix_stream_socket connectto;
 
 # allow socket communication with gnss hal
 allow vendor_location_xtra_daemon vendor_hal_gnss_qti:unix_dgram_socket sendto;
