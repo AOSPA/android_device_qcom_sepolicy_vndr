@@ -45,7 +45,7 @@ allow vendor_location_lowi_server vendor_location_data_file:file create_file_per
 
 # allows socket access in /dev/socket/location
 allow vendor_location_lowi_server vendor_location_socket:lnk_file { read open getattr };
-allow vendor_location_lowi_server vendor_location_socket:sock_file create_file_perms;
+allow vendor_location_lowi_server vendor_location_socket:sock_file create_socket_perms;
 allow vendor_location_lowi_server vendor_location_socket:dir rw_dir_perms;
 allow vendor_location_lowi_server vendor_location:unix_dgram_socket { read write sendto };
 
