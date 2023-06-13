@@ -1,8 +1,13 @@
+# Changes from Qualcomm Innovation Center are provided under the following license:
 # Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 # Dev block nodes
 /dev/cec[0-9]*        u:object_r:vendor_cec_device:s0
+
+#umd_service
+/vendor/bin/hw/vendor\.qti\.hardware\.umd@1\.0-service   u:object_r:vendor_hal_umd_qti_exec:s0
+
 # UFS Devices
 /dev/block/platform/soc/1d84000.ufshc/by-name/system                u:object_r:system_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor                u:object_r:system_block_device:s0
@@ -138,3 +143,12 @@
 
 #msm_lsm cdev
 /dev/msm_lsm_cdev     u:object_r:vendor_msm_lsm_cdev_device:s0
+
+/dev/msm_evrc_in  u:object_r:vendor_media_evrc_device:s0
+/dev/msm_qcelp_in  u:object_r:vendor_media_qcelp_device:s0
+
+#proc
+/proc/sys/vm/page-cluster u:object_r:proc_page_cluster:s0
+
+#tee
+/dev/0:0:0:[0-5]  u:object_r:vendor_dev_tee:s0
