@@ -34,3 +34,6 @@ vendor.fda.property.              u:object_r:vendor_fda_prop:s0
 
 # QESDK ONE
 vendor.qesdk.one.                            u:object_r:vendor_qesdk_one_prop:s0
+
+#episteme prop
+persist.vendor.epi.                u:object_r:vendor_episteme_prop:s0

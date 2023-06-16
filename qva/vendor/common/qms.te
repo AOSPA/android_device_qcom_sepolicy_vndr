@@ -182,3 +182,6 @@ allow vendor_qms vendor_sysfs_battery_supply:file { open read };
 
 # collect tombstone
 crash_dump_fallback(vendor_qms);
+
+allow vendor_qms vendor_qms_app:udp_socket { read write };
+allow vendor_qms vendor_qms_app:tcp_socket { connect getopt read write };

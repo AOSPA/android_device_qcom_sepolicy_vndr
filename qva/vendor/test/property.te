@@ -34,3 +34,6 @@ vendor_restricted_prop(vendor_fda_prop)
 
 # QESDK ONE
 vendor_internal_prop(vendor_qesdk_one_prop);
+
+#Episteme prop
+vendor_internal_prop(vendor_episteme_prop);

@@ -36,3 +36,4 @@ allow vendor_qms_app app_api_service:service_manager find;
 allow vendor_qms_app radio_service:service_manager find;
 hal_client_domain(vendor_qms_app, vendor_hal_qms_qti)
 hal_client_domain(vendor_qms_app, vendor_hal_perf)
+net_domain(vendor_qms_app)

@@ -41,6 +41,12 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:pm8150b@2:qcom,usb-pdphy@1700/extcon/extcon2/cable.0/name  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:pm8150b@2:qcom,usb-pdphy@1700/extcon/extcon2/cable.2/name  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /class/extcon/extcon2/cable.1/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon/extcon4/cable.1/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon/extcon4/cable.0/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon/extcon4/cable.2/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon/extcon3/cable.1/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon/extcon3/cable.0/name  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/state u:object_r:vendor_sysfs_graphics:s0
 
 # sysfs_wakeup nodes
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-00/c440000.qcom,spmi:qcom,pm8150_rtc/wakeup  u:object_r:sysfs_wakeup:s0
@@ -100,17 +106,21 @@ genfscon sysfs /devices/platform/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.2.auto/
 #vendor_sysfs_graphics nodes
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/blue/brightness  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/green/brightness  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/red/brightness  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/red/trigger  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/blue/trigger  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/green/trigger  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_graphics:s0
 
 #vendor_sysfs_scsi_target nodes
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:1/scsi_generic  u:object_r:vendor_sysfs_scsi_target:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:2/scsi_generic  u:object_r:vendor_sysfs_scsi_target:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkscale_enable u:object_r:vendor_sysfs_scsi_host:s0
 
 #vendor_sysfs_ssr nodes
 genfscon sysfs /devices/platform/soc/17300000.remoteproc-adsp/remoteproc/remoteproc0/name  u:object_r:vendor_sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/8300000.remoteproc-cdsp/remoteproc/remoteproc1/name  u:object_r:vendor_sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/5c00000.remoteproc-slpi/remoteproc/remoteproc2/name u:object_r:vendor_sysfs_ssr:s0
 
 #hdmi
 genfscon sysfs /devices/platform/soc/9c0000.qcom,qupv3_0_geni_se/984000.i2c/i2c-0/0-002b/get_hpd_stat u:object_r:vendor_sysfs_hdmi:s0
