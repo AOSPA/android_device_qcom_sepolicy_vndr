@@ -110,7 +110,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/red/trigger  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/blue/trigger  u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds/green/trigger  u:object_r:vendor_sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_graphics:s0
 
 #vendor_sysfs_scsi_target nodes
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:1/scsi_generic  u:object_r:vendor_sysfs_scsi_target:s0
