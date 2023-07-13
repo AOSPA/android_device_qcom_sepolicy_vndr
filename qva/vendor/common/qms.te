@@ -133,6 +133,9 @@ allow vendor_qms_0 self:{
     qipcrtr_socket
 }create_socket_perms_no_ioctl;
 qesdk_access(vendor_qms_0)
+userdebug_or_eng(`
+get_prop(vendor_qms_0, vendor_qms_prop)
+')
 
 allow vendor_qms_1 vendor_qms:fd use;
 allow vendor_qms_1 vendor_qms:unix_dgram_socket write;
@@ -143,6 +146,9 @@ allow vendor_qms_1 self:{
 }create_socket_perms_no_ioctl;
 qesdk_access(vendor_qms_1)
 crash_dump_fallback(vendor_qms_1);
+userdebug_or_eng(`
+get_prop(vendor_qms_1, vendor_qms_prop)
+')
 
 # allow qms to access wpa_socket
 allow vendor_qms vendor_wifi_vendor_data_file:dir r_dir_perms;

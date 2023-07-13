@@ -61,6 +61,7 @@
 
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.face@1\.0-service    u:object_r:vendor_biometricsface_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.keymint-service-spu-qti                u:object_r:vendor_hal_keymint_spu_qti_exec:s0
 
 /data/vendor/face3d_dir(/.*)?                                                      u:object_r:vendor_biometricsface_data_file:s0
 
