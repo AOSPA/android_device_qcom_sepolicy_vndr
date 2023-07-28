@@ -91,3 +91,6 @@ dontaudit hal_camera_default default_prop:file read;
 
 # SSG access
 unix_socket_connect(hal_camera_default, vendor_ssgtzd, vendor_ssgtzd)
+
+# wakelock sysfs access
+wakelock_use(hal_camera_default)
