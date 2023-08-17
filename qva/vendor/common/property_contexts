@@ -163,3 +163,6 @@ vendor.qesdk.ready                           u:object_r:vendor_qesdk_ready_prop:
 
 #qms
 persist.vendor.data.qms.                     u:object_r:vendor_qms_prop:s0
+
+#AON
+ro.vendor.qc_aon_presence                    u:object_r:vendor_qc_aon_prop:s0

@@ -300,3 +300,66 @@ genfscon sysfs /devices/platform/soc/3000000.remoteproc-adsp/remoteproc/remotepr
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca-converged/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/3000000.remoteproc-adsp/remoteproc/remoteproc0/3000000.remoteproc-adsp:glink-edge/3000000.remoteproc-adsp:glink-edge.adsp_apps.-1.-1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/9f700000.remoteproc-wpss/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/17110040.qcom,wcn6750/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:gpio_key/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a88000.qcom,qup_uart/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_0_geni_se/884000.i2c/i2c-0/0-0028/wakeup u:object_r:sysfs_wakeup:s0
+
+# vendor_sysfs_devfreq
+genfscon sysfs /module/msm_drm/parameters/dsi_display0  u:object_r:vendor_sysfs_disp_boot_param:s0
+genfscon sysfs /module/msm_drm/parameters/dsi_display1  u:object_r:vendor_sysfs_disp_boot_param:s0
+
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/modes  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/status  u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight  u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc/video4linux/video32/name u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc/video4linux/video33/name u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkscale_enable  u:object_r:vendor_sysfs_scsi_host:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/auto_hibern8  u:object_r:vendor_sysfs_scsi_host:s0
+
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-Virtual-1/modes  u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DP-1/modes  u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/mgmt/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete1/coresight-ete1/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/10048000.tmc/coresight-tmc-etr/mgmt/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete6/coresight-ete6/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/10b05000.tmc/coresight-tmc-etf/mgmt/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete4/coresight-ete4/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete2/coresight-ete2/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete0/coresight-ete0/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete7/coresight-ete7/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete5/coresight-ete5/mode u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:ete3/coresight-ete3/mode u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0  u:object_r:vendor_sysfs_scsi_host:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/scsi_host/host0  u:object_r:vendor_sysfs_scsi_host:s0
+
+genfscon sysfs /devices/armv8_pmuv3/caps u:object_r:vendor_sysfs_graphics:s0
+
+
+# VM Neuron block device mapping node
+genfscon sysfs /devices/platform/soc/soc:qcom,svm_neuron_block/soc:qcom,svm_neuron_block:application/blk_name  u:object_r:vendor_sysfs_svm_neuron:s0
+
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0  u:object_r:vendor_sysfs_kgsl:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0  u:object_r:vendor_sysfs_kgsl:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_model  u:object_r:vendor_sysfs_kgsl_gpu_model:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk  u:object_r:vendor_sysfs_kgsl_gpuclk:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/perfcounter  u:object_r:vendor_sysfs_kgsl_shell:s0
+genfscon sysfs /devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpubusy  u:object_r:vendor_sysfs_kgsl_gpubusy:s0
+
+# sys net
+genfscon sysfs /devices/platform/soc/17110040.qcom,wcn6750/net/ u:object_r:sysfs_net:s0
+
+#Limits sysfs node
+genfscon sysfs /module/msm_isense_cdsp/data  u:object_r:sysfs_thermal:s0
+
+# AKS gamepad HAL service
+# genfscon sysfs /vendor/bin/hw/vendor\.aks\.gamepad@1\.0-service  u:object_r:hal_gamepad_default_exec:s0  [hal_gamepad_default_exec not defined]
+# genfscon sysfs /dev/aks_input  u:object_r:vendor_aks_chr_device:s0
+
+# Microdump collector parameters
+genfscon sysfs /module/microdump_collector/parameters/  u:object_r:vendor_sysfs_microdump:s0

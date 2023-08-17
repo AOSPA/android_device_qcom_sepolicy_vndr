@@ -58,6 +58,10 @@
 # IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 type vendor_dun_service,                 service_manager_type;
 type vendor_imsrcs_service,              service_manager_type;
@@ -66,3 +70,4 @@ type vendor_hal_sxrd_service,            vendor_service,protected_service,servic
 type vendor_hal_dataconnection_service,  vendor_service, protected_service, service_manager_type;
 type vendor_hal_qms_service,             vendor_service, protected_service, service_manager_type;
 type vendor_hal_bttpi_service,           vendor_service, protected_service, service_manager_type;
+type vendor_hal_qspa_service,           vendor_service, protected_service, service_manager_type;
