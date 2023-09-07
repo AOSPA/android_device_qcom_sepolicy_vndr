@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 # widevine
-allow vendor_hal_drm_widevine vendor_dmabuf_qseecom_ta_heap_device:chr_file r_file_perms;
+allow hal_drm_widevine vendor_dmabuf_qseecom_ta_heap_device:chr_file r_file_perms;
