@@ -3,3 +3,7 @@
 
 #Allow camera to access hdmi bridge device
 allow hal_camera_default vendor_hdmi_bdg_irq_device:chr_file rw_file_perms;
+
+#Allow camera to read vendor_umd_prop and binder call vendor_hal_umd_qti
+get_prop(hal_camera_default, vendor_umd_prop)
+allow hal_camera_default vendor_hal_umd_qti:binder call;
