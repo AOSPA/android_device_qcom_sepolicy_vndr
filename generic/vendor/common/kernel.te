@@ -42,3 +42,5 @@ r_dir_file(kernel, firmware_file)
 r_dir_file(kernel, vendor_firmware_file)
 
 dontaudit kernel kernel:system module_request;
+dontaudit kernel self:capability  { dac_read_search dac_override };
+
