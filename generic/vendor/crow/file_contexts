@@ -278,3 +278,5 @@
 # VM Specific
 /vendor/vm-system(/.*)?              u:object_r:same_process_hal_file:s0
 
+# eSE Strongbox
+/vendor/bin/hw/android\.hardware\.security\.keymint-service\.strongbox-nxp u:object_r:vendor_hal_keymint_strongbox_exec:s0
