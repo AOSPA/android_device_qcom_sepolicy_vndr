@@ -24,11 +24,6 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-# Changes from Qualcomm Innovation Center are provided under the following license:
-#
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause-Clear
 ###################################
 # Dev block nodes
 
@@ -273,10 +268,6 @@
 
 # VM Specific
 /vendor/vm-system(/.*)?              u:object_r:same_process_hal_file:s0
-
-# AKS gamepad HAL service
-/vendor/bin/hw/vendor\.aks\.gamepad@1\.0-service      u:object_r:hal_gamepad_default_exec:s0
-/dev/aks_input                       u:object_r:vendor_aks_chr_device:s0
 
 # Microdump collector parameters
 /vendor/bin/usbudev     u:object_r:vendor_usbudev_qti_exec:s0
