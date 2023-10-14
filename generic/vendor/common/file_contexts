@@ -296,6 +296,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.composer@1\.0-service   u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.display\.composer-service   u:object_r:hal_graphics_composer_default_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.display_boot\.sh  u:object_r:qti_display_boot_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.tui_comm@1\.0-service-qti u:object_r:vendor_hal_tui_comm_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.qdutils_disp@1\.0-service-qti u:object_r:vendor_hal_qdutils_disp_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.trustedui@1\.0-service-qti u:object_r:vendor_hal_trustedui_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.trustedui-aidl-service-qti u:object_r:vendor_hal_trustedui_qti_exec:s0
