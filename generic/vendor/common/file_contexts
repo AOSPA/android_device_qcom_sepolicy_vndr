@@ -311,7 +311,6 @@
 /(vendor|system/vendor)/bin/grep                   u:object_r:vendor_toolbox_exec:s0
 
 /vendor/bin/hw/vendor\.display\.color@1\.0-service            u:object_r:vendor_hal_display_color_default_exec:s0
-/vendor/bin/hw/vendor\.qti\.hardware\.display\.color-service  u:object_r:vendor_hal_display_color_default_exec:s0
 /vendor/bin/hw/vendor\.qti\.media\.c2@1\.0-service               u:object_r:mediacodec_exec:s0
 /vendor/bin/hw/vendor\.qti\.media\.c2audio@1\.0-service          u:object_r:mediacodec_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.audio(@2\.0-|\.)service_64  u:object_r:hal_audio_default_exec:s0
