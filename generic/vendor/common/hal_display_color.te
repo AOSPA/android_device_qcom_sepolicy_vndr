@@ -49,4 +49,3 @@ set_prop(vendor_hal_display_color, vendor_qdcmss_prop);
 #Add rules for display color/postproc AIDL hal
 hal_attribute_service(vendor_hal_display_color, vendor_hal_display_color_aidl_service)
 binder_call(vendor_hal_display_color_server, servicemanager)
-hal_client_domain(platform_app, vendor_hal_display_color)
