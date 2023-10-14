@@ -71,12 +71,23 @@ netmgr_socket(vendor_cnd)
 allow vendor_cnd vendor_netmgrd:fd use;
 allow vendor_cnd vendor_netmgrd:udp_socket { read write };
 
+qnicorn_socket(vendor_cnd)
+allow vendor_cnd vendor_qnicornd:fd use;
+allow vendor_cnd vendor_qnicornd:udp_socket { read write };
+
+nicm_socket(vendor_cnd)
+allow vendor_cnd vendor_nicmd:fd use;
+allow vendor_cnd vendor_nicmd:udp_socket { read write };
+
 # To register vendor_cnd to hwbinder
 hal_server_domain_bypass(vendor_cnd, vendor_hal_datafactory_qti)
+
+#These are specific to HIDL interface
 binder_call(vendor_hal_datafactory_qti_client, vendor_hal_datafactory_qti_server)
 binder_call(vendor_hal_datafactory_qti_server, vendor_hal_datafactory_qti_client)
 hal_attribute_hwservice(vendor_hal_datafactory_qti, vendor_hal_datafactory_hwservice)
 
+hal_attribute_service(vendor_hal_datafactory_qti, vendor_hal_factory_aidlservice)
 r_dir_file(vendor_cnd, vendor_sysfs_ssr)
 
 #allow vendor_cnd to connect, write ssgtzd socket and write wlan device

@@ -46,5 +46,8 @@ binder_call(vendor_atfwd, radio)
 allow vendor_atfwd radio_service:service_manager find;
 binder_use(vendor_atfwd)
 
+# IAtFwd Stable AIDL
+hal_server_domain(vendor_atfwd, vendor_hal_atfwd);
+
 # Fallback for seccomp
 crash_dump_fallback(vendor_atfwd)

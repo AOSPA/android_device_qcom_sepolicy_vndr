@@ -120,3 +120,6 @@ allow vendor_qcc_trd_2 mnt_user_file:lnk_file read;
 
 # use QTR SDK
 qtr_sdk_use(vendor_qcc_trd_2)
+
+# tombstone
+crash_dump_fallback(vendor_qcc_trd_2)

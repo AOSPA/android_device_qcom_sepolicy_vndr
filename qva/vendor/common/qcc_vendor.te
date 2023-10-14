@@ -7,8 +7,6 @@ type vendor_qccvendor_exec, file_type, vendor_file_type, exec_type;
 
 init_daemon_domain(vendor_qccvendor)
 
-vndbinder_use(vendor_qccvendor)
-
 allow vendor_qccvendor vendor_qccvendor_data_file:file create_file_perms;
 allow vendor_qccvendor vendor_qccvendor_data_file:dir create_dir_perms;
 
@@ -40,6 +38,7 @@ allow vendor_qccvendor vendor_qcc_trd_data_file:dir create_dir_perms;
 
 # allow qcc-vendor to add and find vendor service
 add_service(vendor_qccvendor, vendor_qtrsdkservice_service)
+vndbinder_use(vendor_qccvendor)
 
 # allow qcc-vendor to add qccvndhal service to hwservicemanager
 hal_server_domain(vendor_qccvendor, vendor_hal_qccvndhal)
@@ -51,3 +50,12 @@ binder_call(vendor_hal_qccvndhal_server, vendor_hal_qccvndhal_client)
 
 #allow access to qccsyshal
 hal_client_domain(vendor_qccvendor, vendor_qccsyshal);
+
+# tombstone
+crash_dump_fallback(vendor_qccvendor)
+
+hal_attribute_service(vendor_hal_qccvndhal, vendor_hal_qccvndhal_service)
+
+#to avoid an avc denial
+#avc: denied { call } for scontext=u:r:vendor_qccvendor:s0 tcontext=u:r:servicemanager:s0 tclass=binder permissive=0
+binder_call(vendor_qccvendor, servicemanager)

@@ -55,3 +55,6 @@ type vendor_qvr_hidraw_device, dev_type;
 
 type vendor_qmc_dma_device, dev_type;
 type vendor_qmc_cma_device, dev_type;
+
+#swap partition
+type vendor_swap_block_device, dev_type;

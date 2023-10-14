@@ -53,3 +53,9 @@ hal_client_domain(vendor_qtidataservices_app, vendor_hal_perf)
 
 allow vendor_qtidataservices_app vendor_netmgrd:fd use;
 allow vendor_qtidataservices_app vendor_netmgrd:udp_socket { getattr getopt read write };
+
+allow vendor_qtidataservices_app vendor_qnicornd:fd use;
+allow vendor_qtidataservices_app vendor_qnicornd:udp_socket { getattr getopt read write };
+
+allow vendor_qtidataservices_app vendor_nicmd:fd use;
+allow vendor_qtidataservices_app vendor_nicmd:udp_socket { getattr getopt read write };

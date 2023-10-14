@@ -90,6 +90,9 @@ vndbinder_use(hal_audio)
 #Allow hal audio to access wakelock
 wakelock_use(hal_audio)
 
+Allow hal audio to use qtr sdk
+qtr_sdk_use(hal_audio_default)
+
 #allow access to dev/socket/vuidmgr socket
 allow hal_audio_default vendor_vuidmgr_socket:sock_file rw_file_perms;
 

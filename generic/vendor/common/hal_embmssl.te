@@ -35,10 +35,9 @@ hal_server_domain(vendor_hal_embmssl_qti, vendor_hal_embmssl)
 binder_call(vendor_hal_embmssl_client, vendor_hal_embmssl_server)
 binder_call(vendor_hal_embmssl_server, vendor_hal_embmssl_client)
 
-# Add hwservice related rules
-add_hwservice(vendor_hal_embmssl_server, vendor_hal_embmssl_hwservice)
-
-allow vendor_hal_embmssl_client vendor_hal_embmssl_hwservice:hwservice_manager find;
+# Add (aidl) service related rules
+binder_use(vendor_hal_embmssl_qti)
+hal_attribute_service(vendor_hal_embmssl, vendor_hal_embmsslaidl_service)
 
 allow vendor_hal_embmssl_qti self:qipcrtr_socket create_socket_perms_no_ioctl;
 allow vendor_hal_embmssl_qti vendor_time_daemon:unix_stream_socket connectto;

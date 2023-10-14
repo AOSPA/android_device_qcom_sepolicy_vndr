@@ -36,3 +36,6 @@ unix_socket_connect(hal_bluetooth_default, vendor_ssgtzd, vendor_ssgtzd)
 # BT Tpi service
 hal_attribute_service(hal_bluetooth, vendor_hal_bttpi_service)
 binder_call(hal_bluetooth, servicemanager)
+
+# for Xpan Provider Service
+hal_attribute_service(hal_bluetooth, vendor_hal_xpanprovider_service)

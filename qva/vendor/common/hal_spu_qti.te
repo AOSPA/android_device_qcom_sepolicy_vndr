@@ -40,8 +40,11 @@ binder_call(vendor_hal_spu_server, vendor_hal_spu_client)
 
 # Allow the service to be added to hwservice list
 hal_attribute_hwservice(vendor_hal_spu, vendor_hal_spu_hwservice)
+hal_attribute_service(vendor_hal_spu, vendor_hal_spu_service)
+binder_use(vendor_hal_spu_qti)
 
 # Allow access to spss_utils device
+binder_call(vendor_hal_spu_client, servicemanager)
 allow vendor_hal_spu_qti vendor_spss_utils_device:chr_file rw_file_perms;
 
 # Allow access to spcom devices
@@ -53,6 +56,8 @@ allow vendor_hal_spu_qti vendor_iuicc_device:chr_file rw_file_perms;
 allow vendor_hal_spu_qti vendor_spu_hal_ssr_device:chr_file rw_file_perms;
 
 # Allow read sysfs
+allow vendor_hal_spu_qti mnt_vendor_file:dir search;
+allow vendor_hal_spu_qti vendor_spunvm_file:dir search;
 allow vendor_hal_spu_qti vendor_sysfs_data:file r_file_perms;
 allow vendor_hal_spu_qti vendor_sysfs_spdaemon:file r_file_perms;
 r_dir_file(vendor_hal_spu_qti, vendor_sysfs_spss);

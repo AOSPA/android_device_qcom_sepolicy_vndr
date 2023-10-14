@@ -25,6 +25,10 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 # Define domain
 type hal_display_demura_default, domain;
 hal_server_domain(hal_display_demura_default, vendor_hal_display_demura)
@@ -34,9 +38,6 @@ init_daemon_domain(hal_display_demura_default)
 # Allow hwbinder call from hal client to server
 binder_call(vendor_hal_display_demura_client, vendor_hal_display_demura_server)
 binder_call(vendor_hal_display_demura_server, vendor_hal_display_demura_client)
-
-# Add hwservice related rules
-hal_attribute_hwservice(vendor_hal_display_demura, vendor_hal_display_demura_hwservice)
 
 # Rule for vndbinder usage
 allow vendor_hal_display_demura vendor_qdisplay_service:service_manager find;
@@ -52,3 +53,7 @@ allow hal_display_demura_default mnt_vendor_file:dir search;
 # Allow reading/writing to '/mnt/vendor/persist/display/*'
 allow hal_display_demura_default vendor_persist_display_file:dir rw_dir_perms;
 allow hal_display_demura_default vendor_persist_display_file:file create_file_perms;
+
+# Rule for display demura AIDL hal
+hal_attribute_service(vendor_hal_display_demura, vendor_hal_display_demura_aidl_service)
+binder_call(vendor_hal_display_demura_server, servicemanager)

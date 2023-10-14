@@ -67,3 +67,7 @@ allow vendor_wfdvndservice vendor_qdisplay_service:service_manager find;
 
 #Fallback for seccomp
 crash_dump_fallback(vendor_wfdvndservice)
+
+binder_call(vendor_wfdvndservice, vendor_tsa_hdcpservice);
+
+allow vendor_wfdvndservice vendor_tsa_hdcpvndservice:service_manager find;

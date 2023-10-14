@@ -39,6 +39,7 @@ binder_call(vendor_hal_poweroptservice_server, vendor_hal_poweroptservice_client
 
 #allow service to be added to hwservice list
 hal_attribute_hwservice(vendor_hal_poweroptservice, vendor_hal_poweroptservice_hwservice)
+hal_attribute_service(vendor_hal_poweroptservice, vendor_hal_poweroptservice_service)
 
 hal_client_domain(vendor_hal_poweroptservice_qti, vendor_hal_perf)
 hal_client_domain(vendor_hal_poweroptservice_qti, hal_graphics_composer)
@@ -60,3 +61,5 @@ get_prop(vendor_hal_poweroptservice_qti, vendor_display_prop)
 
 allow vendor_hal_poweroptservice_qti vendor_pm_data_file:dir create_dir_perms;
 allow vendor_hal_poweroptservice_qti vendor_pm_data_file:file create_file_perms;
+
+allow vendor_hal_poweroptservice_qti proc_stat:file r_file_perms;

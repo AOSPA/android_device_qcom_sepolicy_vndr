@@ -39,8 +39,10 @@ hal_server_domain(vendor_wifimyftmsvc, vendor_hal_wifimyftm)
 binder_call(vendor_hal_wifimyftm_client, vendor_hal_wifimyftm_server)
 binder_call(vendor_hal_wifimyftm_server, vendor_hal_wifimyftm_client)
 
-#register hal service and allow hal clients to find the service
-hal_attribute_hwservice(vendor_hal_wifimyftm, vendor_hal_wifimyftm_hwservice)
+#register aidl service and allow aidl clients to find the service
+hal_attribute_service(vendor_hal_wifimyftm, vendor_hal_wifimyftm_service)
+
+binder_call(vendor_wifimyftmsvc, servicemanager)
 
 allow vendor_hal_wifimyftm self:netlink_generic_socket create_socket_perms_no_ioctl;
 ')

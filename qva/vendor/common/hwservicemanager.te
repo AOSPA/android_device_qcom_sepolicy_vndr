@@ -29,3 +29,4 @@ allow hwservicemanager lmkd:binder transfer;
 allow hwservicemanager lmkd:dir search;
 allow hwservicemanager lmkd:file { open read };
 allow hwservicemanager lmkd:process getattr;
+binder_call(hwservicemanager,vendor_aidl_camera_provider_qti)

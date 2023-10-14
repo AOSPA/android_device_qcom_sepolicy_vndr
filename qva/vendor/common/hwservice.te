@@ -43,7 +43,6 @@ type vendor_hal_seccam_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_wigig_npt_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_fstman_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_qteeconnector_hwservice , hwservice_manager_type, protected_hwservice;
-type vendor_hal_sensorscalibrate_qti_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_datafactory_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_imsfactory_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_latency_hwservice, hwservice_manager_type, protected_hwservice;
@@ -59,7 +58,6 @@ type vendor_hal_srvctracker_hwservice, hwservice_manager_type, protected_hwservi
 type vendor_hal_secureprocessor_hwservice, hwservice_manager_type, protected_hwservice;
 #untrusted_app_visible_hwservice_violators no longer needed as blacklisting of hwservice is changed
 type vendor_hal_qspmhal_hwservice, hwservice_manager_type;
-type vendor_hal_qesdhal_hwservice, hwservice_manager_type;
 type vendor_hal_bluetooth_dun_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_qseecom_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_qccvndhal_hwservice , hwservice_manager_type, protected_hwservice;

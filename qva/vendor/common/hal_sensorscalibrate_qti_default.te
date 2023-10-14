@@ -35,3 +35,6 @@ r_dir_file(vendor_hal_sensorscalibrate_qti_default, mnt_vendor_file)
 allow vendor_hal_sensorscalibrate_qti vendor_sysfs_data:file r_file_perms;
 allow vendor_hal_sensorscalibrate_qti self:{ socket qipcrtr_socket } create_socket_perms;
 allowxperm vendor_hal_sensorscalibrate_qti self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
+
+hal_attribute_service(vendor_hal_sensorscalibrate_qti, vendor_hal_sensorscalibrateaidl_service)
+binder_call(vendor_hal_sensorscalibrate_qti, servicemanager)

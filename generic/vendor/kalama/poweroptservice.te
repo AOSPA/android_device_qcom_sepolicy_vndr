@@ -68,4 +68,3 @@ allow vendor_hal_poweroptservice_qti cgroup:file r_file_perms;
 allow vendor_hal_poweroptservice_qti proc:file r_file_perms;
 allow vendor_hal_poweroptservice_qti {appdomain}:process getpgid;
 r_dir_file(vendor_hal_poweroptservice_qti, appdomain);
-r_dir_file(vendor_hal_poweroptservice_qti, vendor_sysfs_battery_supply);

@@ -28,3 +28,16 @@
 
 binder_call(vendor_atfwd, vendor_qtelephony);
 allow vendor_atfwd vendor_hal_atfwd_hwservice:hwservice_manager find;
+
+# ==================
+# IAtFwd Stable AIDL
+# ==================
+# Allow binder connection from client to server and vice-versa
+binder_call(vendor_hal_atfwd_client, vendor_hal_atfwd_server);
+binder_call(vendor_hal_atfwd_server, vendor_hal_atfwd_client);
+
+# Allow client to find the service, allow server to register the service
+hal_attribute_service(vendor_hal_atfwd, vendor_hal_atfwd_service);
+
+# Allow binder communication from server to service_manager
+binder_call(vendor_hal_atfwd_server, servicemanager);

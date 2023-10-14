@@ -283,3 +283,14 @@ type vendor_tlpd_socket, file_type;
 type vendor_tlpd_data_file, file_type, data_file_type;
 
 type vendor_dlsc_data_file, file_type, data_file_type;
+
+# QNICORN service
+type vendor_qnicornd_socket, file_type;
+type vendor_qnicorn_data_file, file_type, data_file_type;
+
+# NICM service
+type vendor_nicmd_socket, file_type;
+type vendor_nicm_data_file, file_type, data_file_type;
+
+# lifetime_write_kbytes from kernel
+type vendor_sysfs_fs_ext4, fs_type, sysfs_type;

@@ -66,6 +66,7 @@ type vendor_dmabuf_qseecom_ta_heap_device, dmabuf_heap_device_type, dev_type;
 type vendor_dmabuf_display_heap_device, dmabuf_heap_device_type, dev_type;
 type vendor_dmabuf_audio_ml_heap_device, dmabuf_heap_device_type, dev_type;
 type vendor_dmabuf_demura_heap_device, dmabuf_heap_device_type, dev_type;
+type vendor_dmabuf_ubwcp_heap_device, dmabuf_heap_device_type, dev_type;
 
 type vendor_membuf_dev, dev_type;
 
@@ -85,6 +86,7 @@ type vendor_vm_cp_spss_hlos_shared_device, dev_type;
 type vendor_vm_cp_cdsp_device, dev_type;
 type vendor_vm_cp_app_device, dev_type;
 
+type vendor_smmu_proxy_device, dev_type;
 type vendor_vm_data_block_device, dev_type;
 type vendor_qsee_ipc_irq_spss_device, dev_type;
 type vendor_qdsp_device, dev_type, mlstrustedobject;
@@ -112,3 +114,4 @@ type vendor_qmcs_block_device, dev_type;
 type vendor_qdss_device, dev_type;
 type vendor_adsp_sleepmon_device, dev_type;
 type vendor_hidraw_device, dev_type;
+type vendor_ubwcp_device, dev_type;

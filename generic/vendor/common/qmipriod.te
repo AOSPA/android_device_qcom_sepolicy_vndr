@@ -39,6 +39,16 @@ netmgr_socket(vendor_qmipriod);
 allow vendor_qmipriod vendor_netmgrd_socket:dir w_dir_perms;
 allow vendor_qmipriod vendor_netmgrd_socket:sock_file create;
 
+#allow use of QNICORN unix sockets
+qnicorn_socket(vendor_qmipriod);
+allow vendor_qmipriod vendor_qnicornd_socket:dir w_dir_perms;
+allow vendor_qmipriod vendor_qnicornd_socket:sock_file create;
+
+#allow use of NICM unix sockets
+nicm_socket(vendor_qmipriod);
+allow vendor_qmipriod vendor_nicmd_socket:dir w_dir_perms;
+allow vendor_qmipriod vendor_nicmd_socket:sock_file create;
+
 #allow logging to file for engineering builds
 userdebug_or_eng(`
   allow vendor_qmipriod vendor_qmipriod_data_file:dir rw_dir_perms;

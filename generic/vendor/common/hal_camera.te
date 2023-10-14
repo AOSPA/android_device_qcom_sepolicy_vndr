@@ -53,6 +53,9 @@ allow hal_camera vendor_qdsp_device:chr_file r_file_perms;
 #Allow camera to access synx device
 allow hal_camera vendor_synx_device:chr_file rw_file_perms;
 
+#Allow camera to access ubwcp device
+allow hal_camera vendor_ubwcp_device:chr_file r_file_perms;
+
 #needed for full_treble
 hal_client_domain(hal_camera_default, hal_graphics_composer)
 
@@ -84,6 +87,12 @@ userdebug_or_eng(`
 
 # Display service access
 binder_use(hal_camera_default)
+
+# Offline camera service access
+hal_attribute_service(hal_camera, vendor_hal_offlinecamera_service)
+
+# AON AIDL service access
+hal_attribute_service(hal_camera, vendor_hal_camera_aon_service)
 
 # ADSP access
 allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;

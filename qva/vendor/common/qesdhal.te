@@ -36,19 +36,25 @@ hal_client_domain(vendor_hal_qesdhal_default, hal_allocator)
 
 allow vendor_hal_qesdhal_default vendor_qesdk_service:service_manager find;
 
+allow vendor_hal_qesdhal_default vendor_qesdsect:file read;
+allow vendor_hal_qesdhal_default vendor_qesdsect:dir search;
+allow vendor_hal_qesdhal_default vendor_qesdsect:lnk_file read;
+
 binder_call(vendor_hal_qesdhal_client, vendor_hal_qesdhal_server)
 binder_call(vendor_hal_qesdhal_server, vendor_hal_qesdhal_client)
 
-# Add hwservice related rules
-hal_attribute_hwservice(vendor_hal_qesdhal, vendor_hal_qesdhal_hwservice)
+# Add (aidl) service related rules
+hal_attribute_service(vendor_hal_qesdhal, vendor_hal_qesdhalaidl_service)
 
 binder_use(vendor_hal_qesdhal_default)
-allow vendor_hal_qesdhal_default tee_device:chr_file rw_file_perms;
+unix_socket_connect(vendor_hal_qesdhal_default, vendor_qesdsec, vendor_qesdsect);
 crash_dump_fallback(vendor_hal_qesdhal_default);
+
+# Add oem query service related rules
+unix_socket_connect(vendor_hal_qesdhal_default, vendor_qesdoem, vendor_qesdoem_default);
 
 #allow qesdhal to read boot complete prop
 get_prop(vendor_hal_qesdhal_default, boot_status_prop)
 
 #allow qesdhal to get/set qesdk_ready_prop
 set_prop(vendor_hal_qesdhal_default, vendor_qesdk_ready_prop)
-get_prop(vendor_hal_qesdhal_default, vendor_qesdk_ready_prop)

@@ -37,12 +37,18 @@ hal_client_domain(vendor_hal_qspmhal_default, hal_allocator)
 binder_call(vendor_hal_qspmhal_client, vendor_hal_qspmhal_server)
 binder_call(vendor_hal_qspmhal_server, vendor_hal_qspmhal_client)
 
+hal_attribute_service(vendor_hal_qspmhal, vendor_hal_qspmhal_service)
+binder_call(vendor_hal_qspmhal_server, servicemanager)
+
 # Add hwservice related rules
 hal_attribute_hwservice(vendor_hal_qspmhal, vendor_hal_qspmhal_hwservice)
 
 #Add permission to create/write file
 allow vendor_hal_qspmhal_default vendor_qspmhal_data_file:file  create_file_perms;
 allow vendor_hal_qspmhal_default vendor_qspmhal_data_file:dir rw_dir_perms;
+
+allow vendor_hal_qspmhal_default vendor_qspmhal_data_file:dir { add_name create getattr open read remove_name unlink write };
+allow vendor_hal_qspmhal_default vendor_qspmhal_data_file:file { open write };
 
 #getprop rule for qspm debug prop
 userdebug_or_eng(`get_prop(vendor_hal_qspmhal_default, vendor_qspm_dbg_prop)')

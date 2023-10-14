@@ -82,6 +82,9 @@ persist.vendor.ims.        u:object_r:vendor_ims_prop:s0
 persist.vendor.qti.telephony.vt_cam_interface u:object_r:vendor_ims_prop:s0
 ctl.vendor.imsrcsservice   u:object_r:vendor_ctl_vendor_imsrcsservice_prop:s0
 
+#Location: Apply default value for firmware state and version
+vendor.gnss.firmware. u:object_r:vendor_gnss_fw_state:s0
+
 # HBTP
 ctl.vendor.hbtp u:object_r:vendor_ctl_vendor_hbtp_prop:s0
 

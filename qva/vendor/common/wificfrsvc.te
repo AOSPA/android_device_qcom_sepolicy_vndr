@@ -37,8 +37,10 @@ hal_server_domain(wificfrsvc, hal_wificfr)
 binder_call(hal_wificfr_client, hal_wificfr_server)
 binder_call(hal_wificfr_server, hal_wificfr_client)
 
-#register hal service and allow hal clients to find the service
-hal_attribute_hwservice(hal_wificfr, hal_wificfr_hwservice)
+#register aidl service and allow aidl clients to find the service
+hal_attribute_service(hal_wificfr, hal_wificfr_service)
+
+binder_call(wificfrsvc, servicemanager)
 
 allow hal_wificfr self:netlink_generic_socket create_socket_perms_no_ioctl;
 

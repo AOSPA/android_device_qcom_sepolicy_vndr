@@ -244,3 +244,29 @@ allow $1 vendor_tlpd_socket:dir r_dir_perms;
 unix_socket_connect($1, vendor_tlpd, vendor_tlpd)
 allow $1 vendor_tlpd_socket:sock_file { read write };
 ')
+
+#####################################
+# qnicorn_socket(clientdomain)
+# Allow client domain to connecto and send
+# via a local socket to the qnicornd domain.
+# Also allow the client domain to remove
+# its own socket.
+define(`qnicorn_socket', `
+allow $1 vendor_qnicornd_socket:dir r_dir_perms;
+unix_socket_connect($1, vendor_qnicornd, vendor_qnicornd)
+allow $1 vendor_qnicornd_socket:sock_file { read getattr write };
+allow $1 vendor_qnicornd_socket:tipc_socket { create_socket_perms_no_ioctl };
+')
+
+#####################################
+# nicm_socket(clientdomain)
+# Allow client domain to connecto and send
+# via a local socket to the nicmd domain.
+# Also allow the client domain to remove
+# its own socket.
+define(`nicm_socket', `
+allow $1 vendor_nicmd_socket:dir r_dir_perms;
+unix_socket_connect($1, vendor_nicmd, vendor_nicmd)
+allow $1 vendor_nicmd_socket:sock_file { read getattr write };
+allow $1 vendor_nicmd_socket:tipc_socket { create_socket_perms_no_ioctl };
+')

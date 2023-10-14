@@ -66,6 +66,9 @@ allow system_server vendor_sysfs_wigig:file rw_file_perms;
 # allow system_server to access IWifiStats HAL service
 hal_client_domain(system_server, vendor_hal_wifilearner);
 
+# allow system_server to access IWificfr HAL service
+hal_client_domain(system_server, hal_wificfr);
+
 # allow system_server to access Qspmhal
 hal_client_domain(system_server, vendor_hal_qspmhal);
 
