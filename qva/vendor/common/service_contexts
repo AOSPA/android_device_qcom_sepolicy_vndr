@@ -95,7 +95,6 @@ vendor.qti.hardware.perf2.IPerf/default                u:object_r:vendor_hal_per
 vendor.qti.hardware.vpp.IVppService/default            u:object_r:vendor_hal_vpp_service:s0
 vendor.qti.hardware.power.powermodule.IPowerModule/default     u:object_r:vendor_hal_poweroptservice_service:s0
 vendor.qti.hardware.qseecom.IQSEECom/default           u:object_r:vendor_hal_qseecom_service:s0
-vendor.tsa.hdcp.IHDCPInterface/default                 u:object_r:vendor_tsa_hdcpvndservice:s0
 vendor.qti.hardware.wifi.wificfr.IWificfr/default                         u:object_r:hal_wificfr_service:s0
 vendor.qti.hardware.qteeconnector.IAppConnector/default                   u:object_r:vendor_hal_qteeconnector_service:s0
 vendor.qti.hardware.qteeconnector.IGPAppConnector/default                 u:object_r:vendor_hal_qteeconnector_service:s0

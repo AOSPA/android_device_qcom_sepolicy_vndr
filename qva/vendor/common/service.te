@@ -85,7 +85,6 @@ type vendor_hal_perf2_service,           hal_service_type, protected_service, se
 type vendor_hal_vpp_service,             hal_service_type, protected_service, service_manager_type;
 type vendor_hal_poweroptservice_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qseecom_service,         hal_service_type, protected_service, service_manager_type;
-type vendor_tsa_hdcpvndservice,          service_manager_type;
 type hal_wificfr_service,                hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qteeconnector_service,   hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qspa_service,           hal_service_type, protected_service, service_manager_type;
