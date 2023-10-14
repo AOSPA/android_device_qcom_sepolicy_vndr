@@ -184,9 +184,6 @@
 /vendor/bin/modemManager                                                           u:object_r:vendor_modem_manager_exec:s0
 /vendor/bin/qsap_dcfd                                                              u:object_r:vendor_dcfd_exec:s0
 
-#aidl camera provider
-/(vendor|system/vendor)/bin/hw/android.hardware.camera.provider@V1-qti-service   u:object_r:vendor_aidl_camera_provider_qti_exec:s0
-
 #### Context for location features
 ## location daemons and binaries
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.gnss@.*-service                        u:object_r:vendor_hal_gnss_qti_exec:s0
