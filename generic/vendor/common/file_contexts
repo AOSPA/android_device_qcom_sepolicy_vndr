@@ -505,8 +505,6 @@
 /sys/fs/ext4/sda[0-11]+/lifetime_write_kbytes                        u:object_r:vendor_sysfs_fs_ext4:s0
 /sys/fs/ext4/dm-[0-10]+/lifetime_write_kbytes                        u:object_r:vendor_sysfs_fs_ext4:s0
 /sys/fs/ext4/sde[0-11]+/lifetime_write_kbytes                        u:object_r:vendor_sysfs_fs_ext4:s0
-/sys/power/disk                                                      u:object_r:vendor_sysfs_power:s0
-/sys/power/resume                                                    u:object_r:vendor_sysfs_power:s0
 
 # vendor_sysfs_graphics
 /sys/class/graphics/fb0/mdp/caps                                    u:object_r:vendor_sysfs_graphics:s0
