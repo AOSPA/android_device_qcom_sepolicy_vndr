@@ -24,10 +24,6 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-# Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 com.qualcomm.qti.wifidisplayhal::IHDCPSession                u:object_r:vendor_wifidisplayhalservice_hwservice:s0
 vendor.qti.hardware.iop::IIop                                u:object_r:vendor_hal_iop_hwservice:s0
@@ -53,6 +49,7 @@ vendor.qti.hardware.pal::IPAL                                u:object_r:hal_audi
 vendor.qti.hardware.ListenSoundModel::IListenSoundModel      u:object_r:hal_audio_hwservice:s0
 vendor.qti.gnss::ILocHidlGnss                                u:object_r:hal_gnss_hwservice:s0
 vendor.nxp.hardware.nfc::INqNfc                              u:object_r:hal_nfc_hwservice:s0
+vendor.qti.hardware.sensorscalibrate::ISensorsCalibrate      u:object_r:vendor_hal_sensorscalibrate_qti_hwservice:s0
 com.qualcomm.qti.imscmservice::IImsCmService                 u:object_r:vendor_hal_imsrcsd_hwservice:s0
 vendor.qti.hardware.AGMIPC::IAGM                             u:object_r:vendor_agm_hwservice:s0
 vendor.qti.hardware.fingerprint::IQtiExtendedFingerprint     u:object_r:hal_fingerprint_hwservice:s0

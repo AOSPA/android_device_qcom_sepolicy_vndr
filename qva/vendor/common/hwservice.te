@@ -24,10 +24,6 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-# Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
-# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 type vendor_hal_dpmqmi_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_iop_hwservice, hwservice_manager_type, protected_hwservice;
@@ -43,6 +39,7 @@ type vendor_hal_seccam_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_wigig_npt_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_fstman_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_qteeconnector_hwservice , hwservice_manager_type, protected_hwservice;
+type vendor_hal_sensorscalibrate_qti_hwservice , hwservice_manager_type, protected_hwservice;
 type vendor_hal_datafactory_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_imsfactory_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_latency_hwservice, hwservice_manager_type, protected_hwservice;
