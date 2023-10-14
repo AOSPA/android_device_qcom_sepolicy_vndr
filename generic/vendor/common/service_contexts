@@ -66,7 +66,6 @@ vendor.qti.hardware.display.demura.IDemuraFileFinder/default          u:object_r
 vendor.qti.hardware.camera.offlinecamera.IOfflineCameraService/default    u:object_r:vendor_hal_offlinecamera_service:s0
 vendor.qti.hardware.camera.aon.IAONService/default                    u:object_r:vendor_hal_camera_aon_service:s0
 vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
-vendor.qti.ImsRtpService.IRTPService/ImsRtpService                    u:object_r:vendor_hal_imsrtp_service:s0
 vendor.qti.hardware.embmssl.IEmbms/default                            u:object_r:vendor_hal_embmsslaidl_service:s0
 vendor.qti.hardware.data.connectionaidl.IDataConnection/slot1         u:object_r:vendor_hal_dataconnection_aidl_service:s0
 vendor.qti.hardware.data.connectionaidl.IDataConnection/slot2         u:object_r:vendor_hal_dataconnection_aidl_service:s0

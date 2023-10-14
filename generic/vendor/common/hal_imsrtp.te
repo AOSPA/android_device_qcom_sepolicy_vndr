@@ -58,11 +58,3 @@ binder_call(vendor_hal_imsrtp, vendor_qtelephony)
 
 crash_dump_fallback(vendor_hal_imsrtp)
 
-#AIDL sepolicy rules
-hal_server_domain_bypass(vendor_hal_imsrtp, vendor_hal_imsrtphal)
-# allow client to find the service, allow server to register the service
-# allow binder communication from server to service_manager
-binder_use(vendor_hal_imsrtphal)
-# allow binder connection from client to server
-binder_call(vendor_hal_imsrtphal_client, vendor_hal_imsrtphal_server)
-hal_attribute_service(vendor_hal_imsrtphal, vendor_hal_imsrtp_service)

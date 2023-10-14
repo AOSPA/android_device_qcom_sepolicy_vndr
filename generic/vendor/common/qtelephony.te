@@ -36,4 +36,3 @@ allow vendor_qtelephony vendor_hal_imsrtp_hwservice:hwservice_manager find;
 dontaudit vendor_qtelephony default_android_service:service_manager find;
 binder_call(vendor_qtelephony, vendor_hal_imsrtp)
 hal_client_domain(vendor_qtelephony , vendor_hal_datafactory_qti)
-hal_client_domain(vendor_qtelephony , vendor_hal_imsrtphal)

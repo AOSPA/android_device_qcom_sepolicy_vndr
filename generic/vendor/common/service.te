@@ -46,6 +46,5 @@ type vendor_hal_camera_aon_service, hal_service_type, protected_service, service
 # IAtFwd Stable AIDL
 type vendor_hal_atfwd_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_imsdc_service,         hal_service_type, protected_service, service_manager_type;
-type vendor_hal_imsrtp_service,       hal_service_type, protected_service, service_manager_type;
 type vendor_hal_embmsslaidl_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_dataconnection_aidl_service, hal_service_type, protected_service, service_manager_type;
