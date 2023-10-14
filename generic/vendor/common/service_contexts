@@ -62,7 +62,6 @@ vendor.qti.hardware.wifi.supplicant.ISupplicantVendor/default         u:object_r
 vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
 vendor.qti.hardware.display.color.IDisplayColor/default               u:object_r:vendor_hal_display_color_aidl_service:s0
 vendor.qti.hardware.display.postproc.IDisplayPostproc/default         u:object_r:vendor_hal_display_color_aidl_service:s0
-vendor.qti.hardware.display.demura.IDemuraFileFinder/default          u:object_r:vendor_hal_display_demura_aidl_service:s0
 vendor.qti.hardware.camera.offlinecamera.IOfflineCameraService/default    u:object_r:vendor_hal_offlinecamera_service:s0
 vendor.qti.hardware.camera.aon.IAONService/default                    u:object_r:vendor_hal_camera_aon_service:s0
 vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
