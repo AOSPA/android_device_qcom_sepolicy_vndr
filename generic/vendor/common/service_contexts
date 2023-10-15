@@ -54,7 +54,6 @@ android.hardware.camera.provider.ICameraProvider/vendor_qti/0         u:object_r
 #Refer to b/236750094
 android.hardware.drm.IDrmFactory/widevine                             u:object_r:hal_drm_service:s0
 vendor.qti.hardware.wifi.supplicant.ISupplicantVendor/default         u:object_r:hal_wifi_supplicant_service:s0
-vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
 vendor.qti.hardware.camera.offlinecamera.IOfflineCameraService/default    u:object_r:vendor_hal_offlinecamera_service:s0
 vendor.qti.hardware.camera.aon.IAONService/default                    u:object_r:vendor_hal_camera_aon_service:s0
 vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
