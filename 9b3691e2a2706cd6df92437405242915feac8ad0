@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "428ba759_649233f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-10-21T07:58:15Z",
+      "side": 1,
+      "message": "re-applied the original commit to make it easier to handle rebases.  thanks though.",
+      "revId": "9b3691e2a2706cd6df92437405242915feac8ad0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
