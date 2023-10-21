@@ -16,6 +16,24 @@
       "message": "re-applied the original commit to make it easier to handle rebases.  thanks though.",
       "revId": "9b3691e2a2706cd6df92437405242915feac8ad0",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "875e89f8_d3e6805f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000911
+      },
+      "writtenOn": "2023-10-21T08:13:16Z",
+      "side": 1,
+      "message": "OK. Then this patch will be abandoned. Please rebase that commit. Thanks for your reply.",
+      "parentUuid": "428ba759_649233f6",
+      "revId": "9b3691e2a2706cd6df92437405242915feac8ad0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
