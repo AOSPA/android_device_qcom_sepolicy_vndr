@@ -73,7 +73,7 @@ vendor.qti.hardware.data.connectionfactory.IFactory/slot1 u:object_r:vendor_hal_
 vendor.qti.data.txpwrservice.ITxPwrService/default     u:object_r:vendor_hal_qms_service:s0
 vendor.qti.hardware.bttpi.IBtTpi/default               u:object_r:vendor_hal_bttpi_service:s0
 vendor.qti.hardware.alarm.IAlarm/default               u:object_r:vendor_hal_alarm_qti_aidl_service:s0
-endor.nxp.nxpnfc_aidl.INxpNfc/default                 u:object_r:vendor_hal_nxpnfc_service:s0
+vendor.nxp.nxpnfc_aidl.INxpNfc/default                 u:object_r:vendor_hal_nxpnfc_service:s0
 vendor.qti.hardware.servicetrackeraidl.IServicetracker/default           u:object_r:vendor_hal_servicetrackeraidl_service:s0
 
 android.hardware.security.keymint.IKeyMintDevice/strongbox                u:object_r:hal_keymint_service:s0
