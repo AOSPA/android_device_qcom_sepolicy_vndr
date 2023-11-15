@@ -180,6 +180,9 @@
 # Brightness permission
 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/backlight(/.*)?     u:object_r:vendor_sysfs_graphics:s0
 
+#subsys nodes
+/sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/name u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/recovery u:object_r:vendor_sysfs_ssr_toggle:s0
 
 #FPC
 /sys/devices/platform/soc/soc:fpc1020(/.*?) u:object_r:vendor_sysfs_fps_attr:s0
