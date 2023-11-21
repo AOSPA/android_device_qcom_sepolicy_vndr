@@ -155,3 +155,6 @@
 
 #uac
 /dev/snd/pcmC[1-9].*  u:object_r:vendor_pcm_device:s0
+
+#aidirector
+/dev/snd/controlC0  u:object_r:vendor_aid_audio_device:s0
