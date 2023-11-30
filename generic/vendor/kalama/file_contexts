@@ -315,6 +315,9 @@
 /vendor/bin/hw/vendor\.aks\.gamepad@1\.0-service      u:object_r:hal_gamepad_default_exec:s0
 /dev/aks_input                       u:object_r:vendor_aks_chr_device:s0
 
+#Gfx
+/(vendor|system/vendor)/bin/init\.qti\.graphics\.sh  u:object_r:vendor_qti_graphics_boot_exec:s0
+
 # Microdump collector parameters
 /sys/module/microdump_collector/parameters/.*  u:object_r:vendor_sysfs_microdump:s0
 /vendor/bin/usbudev     u:object_r:vendor_usbudev_qti_exec:s0
