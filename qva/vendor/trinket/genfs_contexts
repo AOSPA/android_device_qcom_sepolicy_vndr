@@ -132,6 +132,8 @@ genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-1/
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/fps_periodicity_ms u:object_r:vendor_sysfs_graphics:s0
 
 # Sysfs for graphics
+genfscon sysfs /devices/platform/soc/5900000.qcom,kgsl-3d0/kgsl/kgsl-3d0 u:object_r:vendor_sysfs_kgsl:s0
+genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/modes u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/status u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_rotator/video4linux/video2/name u:object_r:vendor_sysfs_graphics:s0
 
