@@ -180,6 +180,9 @@
 # Brightness permission
 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/backlight(/.*)?     u:object_r:vendor_sysfs_graphics:s0
 
+#subsys nodes
+/sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/name u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/recovery u:object_r:vendor_sysfs_ssr_toggle:s0
 
 #FPC
 /sys/devices/platform/soc/soc:fpc1020(/.*?) u:object_r:vendor_sysfs_fps_attr:s0
@@ -197,5 +200,9 @@
 
 /dev/msm_evrc_in  u:object_r:vendor_media_evrc_device:s0
 /dev/msm_qcelp_in  u:object_r:vendor_media_qcelp_device:s0
+
+#msmwma & msm_wmapro
+/dev/msm_wma  u:object_r:vendor_media_wma_device:s0
+/dev/msm_wmapro  u:object_r:vendor_media_wmapro_device:s0
 
 /sys/devices/platform/soc/5900000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_model               u:object_r:vendor_sysfs_kgsl_gpu_model:s0
