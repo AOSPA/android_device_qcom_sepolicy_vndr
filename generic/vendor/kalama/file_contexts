@@ -251,3 +251,6 @@
 
 # VM Specific
 /vendor/vm-system(/.*)?              u:object_r:same_process_hal_file:s0
+
+#Gfx
+/(vendor|system/vendor)/bin/init\.qti\.graphics\.sh  u:object_r:vendor_qti_graphics_boot_exec:s0
