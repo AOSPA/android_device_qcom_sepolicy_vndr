@@ -31,3 +31,5 @@ allow init vendor_sysfs_qvr_external_sensor:file setattr;
 # allow init to mount spunvm partition
 allow init vendor_spunvm_file:dir mounton;
 allow init vendor_spunvm_file:filesystem { relabelto relabelfrom mount };
+
+allow vendor_init block_device:lnk_file setattr;
