@@ -52,6 +52,9 @@ get_prop(system_server, vendor_reschedule_service_prop)
 get_prop(system_server, vendor_cgroup_follow_prop)
 get_prop(system_server, vendor_scroll_prop)
 
+# allow system_server to read vendor_persist_camera_prop
+get_prop(system_server, vendor_persist_camera_prop)
+
 # allow WIGIG framework hosted in system_server to access wigig_hal
 hal_client_domain(system_server, vendor_hal_wigig)
 # allow WIGIG framework to access network performance tuner
