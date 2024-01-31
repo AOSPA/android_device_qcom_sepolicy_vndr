@@ -1,5 +1,4 @@
 # Copyright (c) 2016-2019, The Linux Foundation. All rights reserved.
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -26,6 +25,11 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###################################
+#Changes from Qualcomm Innovation Center are provided under the following license:
+#
+# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
 # Dev block nodes
 
 #Primary storage device nodes
@@ -190,6 +194,14 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-fpc u:object_r:vendor_hal_fingerprint_fpc_exec:s0
 
 /sys/devices/platform/soc/1b46018.qfprom/qfprom0/nvmem                  u:object_r:vendor_sysfs_qfprom:s0
+
+#Vendor_hvdcp
+
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:vadc@3100/iio:device[0-9](/.*?)  u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-02/1c40000.qcom,spmi:qcom,pmi632@2:qpnp,qg/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-02/1c40000.qcom,spmi:qcom,pmi632@2:vadc@3100/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
+/sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-000c/4a84000.i2c:qcom,smb1355@c:qcom,smb1355-charger@1000/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
 
 # Audio
 /dev/msm_audio_cal  u:object_r:vendor_audio_cal_device:s0
