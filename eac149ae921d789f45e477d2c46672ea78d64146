@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d836cc92_afdee0ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-02-11T09:12:25Z",
+      "side": 1,
+      "message": "fixes\n`\n02-11 13:20:41.192   432   432 E SELinux : avc:  denied  { find } for interface\u003dvendor.qti.hardware.qccvndhal::IQccvndhal sid\u003du:r:vendor_qcc_trd_2:s0 pid\u003d1795 scontext\u003du:r:vendor_qcc_trd_2:s0 tcontext\u003du:object_r:vendor_hal_qccvndhal_hwservice:s0 tclass\u003dhwservice_manager permissive\u003d0\n02-11 13:20:41.195  1795  1795 E HidlServiceManagement: Service vendor.qti.hardware.qccvndhal@1.0::IQccvndhal/qccvndhal must be in VINTF manifest in order to register/get.\n02-11 13:20:41.195  1795  1795 E qcc-trd : qccvndhal_register_service: [ERROR] registerAsService() failed with status: -2147483648\n02-11 13:20:41.195  1795  1795 I qcc-trd : qcc-trd version: QCC-TR2.1-20230713-c30e835f started\n02-11 13:20:41.195  1795  1795 I qcc-trd : property_set vendor.qti.qdma.enabled 1\n02-11 13:20:41.179  1795  1795 W qcc-trd : type\u003d1400 audit(0.0:33): avc:  denied  { write } for  name\u003d\"property_service\" dev\u003d\"tmpfs\" ino\u003d493 scontext\u003du:r:vendor_qcc_trd_2:s0 tcontext\u003du:object_r:property_socket:s0 tclass\u003dsock_file permissive\u003d0\n02-11 13:20:41.195  1795  1795 W libc    : Unable to set property \"vendor.qti.qdma.enabled\" to \"1\": connection failed; errno\u003d13 (Permission denied)\n`",
+      "revId": "eac149ae921d789f45e477d2c46672ea78d64146",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
