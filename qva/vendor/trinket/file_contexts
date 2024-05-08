@@ -187,6 +187,8 @@
 #subsys nodes
 /sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/name u:object_r:vendor_sysfs_ssr:s0
 /sys/devices/platform/soc/6080000.remoteproc-mss/remoteproc/remoteproc[0-9]+/recovery u:object_r:vendor_sysfs_ssr_toggle:s0
+/sys/devices/platform/soc/b300000.remoteproc-cdsp/remoteproc/remoteproc[0-9]+/name u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/ab00000.remoteproc-adsp/remoteproc/remoteproc[0-9]+/name u:object_r:vendor_sysfs_ssr:s0
 
 #FPC
 /sys/devices/platform/soc/soc:fpc1020(/.*?) u:object_r:vendor_sysfs_fps_attr:s0
