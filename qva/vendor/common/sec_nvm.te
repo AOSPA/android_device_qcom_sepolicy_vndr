@@ -31,6 +31,7 @@ type vendor_sec_nvm, domain;
 type vendor_sec_nvm_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(vendor_sec_nvm)
+qhdc_sdk_use(vendor_sec_nvm)
 allow vendor_sec_nvm ion_device:chr_file rw_file_perms;
 allow vendor_sec_nvm vendor_skp_device:chr_file { getattr rw_file_perms };
 

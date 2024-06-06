@@ -40,7 +40,7 @@ vendor.qti.hardware.radio.qcrilhook.IQtiOemHook/oemhook0              u:object_r
 vendor.qti.hardware.radio.qcrilhook.IQtiOemHook/oemhook1              u:object_r:vendor_hal_telephony_service2:s0
 vendor.qti.hardware.radio.internal.deviceinfo.IDeviceInfo/deviceinfo  u:object_r:vendor_hal_telephony_service2:s0
 vendor.qti.hardware.radio.qtiradioconfig.IQtiRadioConfig/default      u:object_r:vendor_hal_telephony_service2:s0
-vendor.qti.hardware.radio.atfwd.IAtFwd/AtFwdAidl                      u:object_r:vendor_hal_atfwd_service:s0
+vendor.qti.hardware.radio.atfwd.IAtFwd/AtFwdAidl                      u:object_r:vendor_hal_telephony_service2:s0
 vendor.qti.hardware.radio.uim_remote_client.IUimRemoteServiceClient/uimRemoteClient0              u:object_r:vendor_hal_telephony_service2:s0
 vendor.qti.hardware.radio.uim_remote_client.IUimRemoteServiceClient/uimRemoteClient1              u:object_r:vendor_hal_telephony_service2:s0
 vendor.qti.hardware.radio.uim_remote_server.IUimRemoteServiceServer/uimRemoteServer0              u:object_r:vendor_hal_telephony_service2:s0
@@ -61,3 +61,4 @@ vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r
 vendor.qti.hardware.embmssl.IEmbms/default                            u:object_r:vendor_hal_embmsslaidl_service:s0
 vendor.qti.hardware.data.connectionaidl.IDataConnection/slot1         u:object_r:vendor_hal_dataconnection_aidl_service:s0
 vendor.qti.hardware.data.connectionaidl.IDataConnection/slot2         u:object_r:vendor_hal_dataconnection_aidl_service:s0
+vendor.qti.data.qmsservice.IQmsService                                u:object_r:vendor_qms_service:s0

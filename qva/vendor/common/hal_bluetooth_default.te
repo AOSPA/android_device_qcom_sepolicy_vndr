@@ -33,9 +33,16 @@ allow hal_bluetooth_default vendor_fm_radio_device:chr_file r_file_perms;
 #allow BT transport HAL to connect, write ssgtzd socket
 unix_socket_connect(hal_bluetooth_default, vendor_ssgtzd, vendor_ssgtzd)
 
+# for BT SAR Service
+hal_attribute_service(hal_bluetooth, vendor_hal_bluetooth_sar_service)
+
 # BT Tpi service
 hal_attribute_service(hal_bluetooth, vendor_hal_bttpi_service)
 binder_call(hal_bluetooth, servicemanager)
 
-# for Xpan Provider Service
-hal_attribute_service(hal_bluetooth, vendor_hal_xpanprovider_service)
+allow hal_bluetooth_default self:netlink_generic_socket { bind create getattr read setopt write };
+allow hal_bluetooth_default self:udp_socket create_socket_perms;
+allowxperm hal_bluetooth_default self:udp_socket ioctl { SIOCSIFFLAGS };
+
+# for TCP and UDP sockets
+net_domain(hal_bluetooth_default)

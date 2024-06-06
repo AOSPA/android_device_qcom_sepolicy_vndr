@@ -257,3 +257,12 @@ unix_socket_connect($1, vendor_qnicornd, vendor_qnicornd)
 allow $1 vendor_qnicornd_socket:sock_file { read getattr write };
 allow $1 vendor_qnicornd_socket:tipc_socket { create_socket_perms_no_ioctl };
 ')
+
+#######################################
+# Allow domains to use QHDC
+# syntax: qhdc_sdk_use(clientdomain)
+define(`qhdc_sdk_use', `
+allow $1 vendor_qms_service:service_manager find;
+binder_call($1, vendor_qms)
+binder_call(vendor_qms, $1)
+')

@@ -233,6 +233,9 @@ type vendor_sysfs_usb_node, fs_type, sysfs_type;
 
 #qms
 type vendor_qms_vndr_data_file, file_type, data_file_type;
+type vendor_qms_main_data_file, file_type, data_file_type;
+type vendor_qms_other_data_file, file_type, data_file_type;
+type vendor_qms_config_data_file, file_type, data_file_type;
 
 #/sys/block/dev/sd*
 type vendor_sysfs_sd, sysfs_type, fs_type;

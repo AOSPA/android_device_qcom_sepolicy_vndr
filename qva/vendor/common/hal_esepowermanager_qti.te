@@ -67,3 +67,6 @@ allow vendor_hal_esepowermanager_qti vendor_ese_gpio_device:chr_file rw_file_per
 
 # Allow esepowermanager HAL to set eSE vendor properties
 set_prop(vendor_hal_esepowermanager_qti, vendor_ese_prop)
+
+# Allow esepmdaemon to interract with ion_device
+allow vendor_hal_esepowermanager_qti ion_device:chr_file r_file_perms;

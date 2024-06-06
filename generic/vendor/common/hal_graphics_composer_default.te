@@ -46,7 +46,9 @@ allow hal_graphics_composer_default mnt_vendor_file:dir search;
 
 allow hal_graphics_composer oemfs:dir r_dir_perms;
 
+# Allow access to vendor display properties
 get_prop(hal_graphics_composer, vendor_display_prop)
+get_prop(hal_graphics_composer, vendor_display_notch_prop)
 
 allow hal_graphics_composer_default hal_graphics_mapper_hwservice:hwservice_manager find;
 

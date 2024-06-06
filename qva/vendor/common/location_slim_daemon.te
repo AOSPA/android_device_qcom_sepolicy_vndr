@@ -49,6 +49,8 @@ allow vendor_location_slim_daemon vendor_location_socket:sock_file create_file_p
 allow vendor_location_slim_daemon vendor_location_socket:dir rw_dir_perms;
 allow vendor_location_slim_daemon vendor_location:unix_dgram_socket { read write sendto };
 
+get_prop(vendor_location_slim_daemon, vendor_qms_prop)
+
 # allow socket communication with gnss hal
 allow vendor_location_slim_daemon vendor_hal_gnss_qti:unix_dgram_socket sendto;
 

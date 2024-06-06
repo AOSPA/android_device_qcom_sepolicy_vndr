@@ -63,6 +63,8 @@ userdebug_or_eng(`
 
 set_prop(vendor_location_xtwifi_client, vendor_location_prop);
 
+get_prop(vendor_location_xtwifi_client, vendor_qms_prop)
+
 wakelock_use(vendor_location_xtwifi_client)
 allow vendor_location_xtwifi_client self:capability2 wake_alarm;
 unix_socket_connect(vendor_location_xtwifi_client, property, init);
@@ -92,3 +94,5 @@ crash_dump_fallback(vendor_location_xtwifi_client)
 # allows xtwifi-client to access ssgtzd socket
 unix_socket_connect(vendor_location_xtwifi_client, vendor_ssgtzd, vendor_ssgtzd)
 
+# allows xtwifi-client to access qhdc sdk
+qhdc_sdk_use(vendor_location_xtwifi_client)
