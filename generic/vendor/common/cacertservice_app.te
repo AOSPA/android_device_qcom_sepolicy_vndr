@@ -1,0 +1,14 @@
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+# Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+type vendor_cacertservice_app, domain;
+app_domain(vendor_cacertservice_app);
+
+hal_server_domain_bypass(vendor_cacertservice_app, vendor_hal_cacert_qti)
+hal_attribute_service(vendor_hal_cacert_qti, vendor_hal_cacert_aidlservice)
+binder_call(vendor_cacertservice_app, vendor_location_xtra_daemon)
+binder_use(vendor_cacertservice_app)
+
+allow vendor_cacertservice_app { app_api_service }:service_manager find;
+allow vendor_cacertservice_app self:qipcrtr_socket create_socket_perms_no_ioctl;
+hal_client_domain(vendor_cacertservice_app, vendor_hal_perf)

@@ -47,6 +47,12 @@ binder_call(vendor_wifidisplayhalservice_server, vendor_wifidisplayhalservice_cl
 # Add hwservice related rules
 hal_attribute_hwservice(vendor_wifidisplayhalservice, vendor_wifidisplayhalservice_hwservice)
 
+# Add (aidl) service related rules
+hal_attribute_service(vendor_wifidisplayhalservice, hal_wifidisplaysession_service)
+hal_attribute_service(vendor_wifidisplayhalservice, hal_wifidisplayvideo_service)
+hal_attribute_service(vendor_wifidisplayhalservice, hal_wifidisplayaudio_service)
+hal_attribute_service(vendor_wifidisplayhalservice, hal_wifidisplayimage_service)
+
 #Direct streaming native service
 add_service(vendor_wifidisplayhalservice_qti, vendor_wfdnativemm_service)
 
@@ -127,3 +133,6 @@ allow vendor_wifidisplayhalservice_qti uhid_device:chr_file rw_file_perms;
 
 #Fallback for seccomp
 crash_dump_fallback(vendor_wifidisplayhalservice_qti)
+
+#Allow the interaction with servicemanager
+binder_use(vendor_wifidisplayhalservice_qti)

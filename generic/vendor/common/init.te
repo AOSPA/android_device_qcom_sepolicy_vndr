@@ -84,5 +84,12 @@ allow init firmware_file:filesystem getattr;
 recovery_only(`
 allow init vendor_sysfs_graphics:file w_file_perms;
 allow init vendor_sysfs_graphics:dir search;
+')
+
 allow init vendor_sysfs_usb_device:file w_file_perms;
+allow init vendor_init_exec:file execute;
+allow init self:capability sys_nice;
+
+userdebug_or_eng(`
+allow init kmsg_device:chr_file ioctl;
 ')

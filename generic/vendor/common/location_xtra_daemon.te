@@ -58,6 +58,8 @@ hwbinder_use(vendor_location_xtra_daemon)
 get_prop(vendor_location_xtra_daemon, hwservicemanager_prop)
 binder_call(vendor_location_xtra_daemon, system_server)
 binder_call(vendor_location_xtra_daemon, vendor_qms)
+binder_call(vendor_location_xtra_daemon, vendor_cacertservice_app)
+binder_use(vendor_location_xtra_daemon)
 
 # allows shell execute xtra-daemon in userdebug mode.
 userdebug_or_eng(`
@@ -78,6 +80,9 @@ get_prop(vendor_location_xtra_daemon, vendor_qcc_prop)
 
 hal_client_domain(vendor_location_xtra_daemon , vendor_hal_datafactory_qti)
 hal_client_domain(vendor_location_xtra_daemon , vendor_hal_cacertservice_qti)
+hal_client_domain(vendor_location_xtra_daemon , vendor_hal_cacert_qti)
 hal_client_domain(vendor_location_xtra_daemon , vendor_qccsyshal);
 
 crash_dump_fallback(vendor_location_xtra_daemon)
+
+allow vendor_location_xtra_daemon vendor_location:unix_stream_socket { read write };

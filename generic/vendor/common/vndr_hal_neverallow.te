@@ -60,6 +60,7 @@ neverallow {
   -vendor_qms
   -vendor_qvrd_vndr
   -vendor_sxrd_vndr
+  -vendor_cacertservice_app
   userdebug_or_eng(` -vendor_hal_diaghal')
   userdebug_or_eng(` -vendor_qtiloopback_native')
 } domain:{ tcp_socket udp_socket rawip_socket } *;
@@ -67,6 +68,7 @@ neverallow {
 neverallow {
   vendor_halserverdomain
   - vendor_qtidataservices_app
+  - vendor_cacertservice_app
 } {
   file_type
   fs_type
@@ -75,4 +77,4 @@ neverallow {
   -toolbox_exec
 }:file execute_no_trans;
 neverallow { domain -init } vendor_halserverdomain:process transition;
-neverallow *  { vendor_halserverdomain - vendor_qtidataservices_app }:process dyntransition;
+neverallow *  { vendor_halserverdomain - vendor_qtidataservices_app - vendor_cacertservice_app }:process dyntransition;

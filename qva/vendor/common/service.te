@@ -75,6 +75,8 @@ type vendor_hal_factory_service,         hal_service_type, protected_service, se
 type vendor_hal_bttpi_service,           hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qtiwifi_service,         hal_service_type, protected_service, service_manager_type;
 type vendor_hal_xpanprovider_service,    hal_service_type, protected_service, service_manager_type;
+type vendor_hal_bluetooth_sar_service,   hal_service_type, protected_service, service_manager_type;
+type vendor_hal_fm_aidl_service,         hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qesdhalaidl_service,     hal_service_type, service_manager_type;
 type vendor_hal_sensorscalibrateaidl_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qspmhal_service,         hal_service_type, service_manager_type;
@@ -86,5 +88,9 @@ type vendor_hal_vpp_service,             hal_service_type, protected_service, se
 type vendor_hal_poweroptservice_service, hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qseecom_service,         hal_service_type, protected_service, service_manager_type;
 type hal_wificfr_service,                hal_service_type, protected_service, service_manager_type;
+type hal_wifidisplaysession_service,     hal_service_type, service_manager_type;
+type hal_wifidisplayvideo_service,       hal_service_type, service_manager_type;
+type hal_wifidisplayaudio_service,       hal_service_type, service_manager_type;
+type hal_wifidisplayimage_service,       hal_service_type, service_manager_type;
 type vendor_hal_qteeconnector_service,   hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qspa_service,           hal_service_type, protected_service, service_manager_type;
