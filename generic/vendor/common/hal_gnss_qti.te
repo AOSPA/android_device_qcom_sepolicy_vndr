@@ -73,6 +73,11 @@ get_prop(vendor_hal_gnss_qti, boot_status_prop)
 allow vendor_hal_gnss_qti vendor_rild_socket:dir search;
 unix_socket_connect(vendor_hal_gnss_qti, vendor_rild, rild)
 
+#Allow crash dump to communicate with hal_gnss_qti
+userdebug_or_eng(`
+    allow crash_dump vendor_hal_gnss_qti:unix_dgram_socket { read write };
+')
+
 # Most HALs are not allowed to use network sockets. QTI library
 # libqdi is used across multiple processes which are clients of
 # netmgrd including the GNSS HAL. libqdi first attempts to get the network
