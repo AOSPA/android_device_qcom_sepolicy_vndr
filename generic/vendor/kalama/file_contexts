@@ -254,6 +254,3 @@
 
 #Gfx
 /(vendor|system/vendor)/bin/init\.qti\.graphics\.sh  u:object_r:vendor_qti_graphics_boot_exec:s0
-
-# Microdump collector parameters
-/sys/module/microdump_collector/parameters/.*  u:object_r:vendor_sysfs_microdump:s0
