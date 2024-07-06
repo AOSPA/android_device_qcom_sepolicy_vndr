@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acf435cc_c6d4ff85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-07-06T12:44:01Z",
+      "side": 1,
+      "message": "removed all dupes since common policy on sepolicy_vndr labels it",
+      "revId": "225a9acf20972412e59b9e6ebe56d5c80a928f5b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
