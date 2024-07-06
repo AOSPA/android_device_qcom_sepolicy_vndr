@@ -233,9 +233,6 @@ genfscon sysfs /devices/platform/soc/5900000.qcom,kgsl-3d0/kgsl/kgsl-3d0/perfcou
 genfscon sysfs /devices/platform/soc/5900000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpubusy           u:object_r:vendor_sysfs_kgsl_gpubusy:s0
 genfscon sysfs /devices/platform/soc/5900000.qcom,kgsl-3d0/devfreq/5900000.qcom,kgsl-3d0   u:object_r:vendor_sysfs_kgsl:s0
 
-# Microdump collector parameters
-genfscon sysfs /module/microdump_collector/parameters  u:object_r:vendor_sysfs_microdump:s0
-
 # mmc device type
 genfscon sysfs /devices/platform/soc/4784000.sdhci/mmc_host/mmc1/mmc1:aaaa/type u:object_r:vendor_sysfs_mmc_device_type:s0
 
