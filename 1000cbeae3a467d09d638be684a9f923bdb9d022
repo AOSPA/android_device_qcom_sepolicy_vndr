@@ -16,6 +16,24 @@
       "message": "duplicate?",
       "revId": "1000cbeae3a467d09d638be684a9f923bdb9d022",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c60aad76_61ad45a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-07-06T12:39:18Z",
+      "side": 1,
+      "message": "sepolicy_vndr/generic/vendor/kalama/file_contexts\n259:/sys/module/microdump_collector/parameters/.*  u:object_r:vendor_sysfs_microdump:s0\n\nsepolicy_vndr/generic/vendor/common/file_contexts\n663:/sys/module/microdump_collector/parameters/.*  u:object_r:vendor_sysfs_microdump:s0\n\nsepolicy_vndr/generic/vendor/crow/genfs_contexts\n365:genfscon sysfs /module/microdump_collector/parameters/  u:object_r:vendor_sysfs_microdump:s0\n\nsepolicy_vndr/qva/vendor/bengal/genfs_contexts\n237:genfscon sysfs /module/microdump_collector/parameters  u:object_r:vendor_sysfs_microdump:s0\n\n\n\nlooks like it",
+      "parentUuid": "57cdf485_a29a0b05",
+      "revId": "1000cbeae3a467d09d638be684a9f923bdb9d022",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
