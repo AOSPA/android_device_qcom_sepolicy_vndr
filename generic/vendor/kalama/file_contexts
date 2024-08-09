@@ -125,6 +125,12 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/limits                u:object_r:vendor_limits_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/limits-cdsp           u:object_r:vendor_limits_block_device:s0
 
+# hdmi device
+/dev/hdmi_bdg_irq_handler                                      u:object_r:vendor_hdmi_bdg_irq_device:s0
+
+# dp device
+/dev/dp_bdg_irq_handler                                      u:object_r:vendor_dp_bdg_irq_device:s0
+
 #emmc node
 /dev/block/platform/soc/7c4000.sdhci/by-name/abl_[ab]          u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/7c4000.sdhci/by-name/apdp_[ab]         u:object_r:vendor_custom_ab_block_device:s0
