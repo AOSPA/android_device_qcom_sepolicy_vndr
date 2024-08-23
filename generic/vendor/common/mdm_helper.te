@@ -57,6 +57,8 @@ dontaudit vendor_mdm_helper vendor_tombstone_data_file:dir write;
 userdebug_or_eng(`
 allow vendor_mdm_helper vendor_tombstone_data_file:dir create_dir_perms;
 allow vendor_mdm_helper vendor_tombstone_data_file:file create_file_perms;
+allow vendor_mdm_helper vendor_ddi_file:dir create_dir_perms;
+allow vendor_mdm_helper vendor_ddi_file:file create_file_perms;
 ')
 #Ramdump config END
 
