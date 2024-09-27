@@ -1,4 +1,4 @@
-# Copyright (c) 2020, The Linux Foundation. All rights reserved.
+# Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -26,21 +26,11 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Changes from Qualcomm Innovation Center are provided under the following license:
-#
-# Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-type vendor_logdump_partition, dev_type;
-type vendor_mba_debug_dev, dev_type;
-type vendor_dip_device, dev_type;
-type vendor_rawdump_block_device, dev_type;
-type vendor_virtio_chr_device, dev_type;
-type vendor_gunyah_chr_device, dev_type;
-type vendor_aks_chr_device, dev_type;
+#for vendor_qti_init_shell to configfs permission
+allow vendor_qti_init_shell configfs:dir { create w_dir_perms };
+allow vendor_qti_init_shell configfs:file { create };
+allow vendor_qti_init_shell configfs:lnk_file { create };
 
-#define HDMI-IN device
-type vendor_hdmi_bdg_irq_device, dev_type;
-type vendor_hdmi_bdg_uxe_irq_device, dev_type;
-
-#define DP-IN device
-type vendor_dp_bdg_irq_device, dev_type;

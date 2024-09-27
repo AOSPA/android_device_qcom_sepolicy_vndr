@@ -24,6 +24,15 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+#
+# Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 #face3d
 persist.vendor.biometricsface.pr u:object_r:vendor_face3d_producer_prop:s0
+
+#umd
+persist.vendor.umdadaptor.mode               u:object_r:vendor_umd_prop:s0
+persist.vendor.umd.                          u:object_r:vendor_umd_prop:s0

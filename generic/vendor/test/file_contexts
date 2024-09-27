@@ -155,3 +155,6 @@
 
 #fan_service
 /(vendor|system/vendor)/bin/fan_service u:object_r:vendor_fan_service_exec:s0
+
+## ddi image
+/data/vendor/ddi(/.*)?      u:object_r:vendor_ddi_file:s0

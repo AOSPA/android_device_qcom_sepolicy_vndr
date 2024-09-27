@@ -280,3 +280,8 @@ type vendor_tlpd_socket, file_type;
 type vendor_tlpd_data_file, file_type, data_file_type;
 
 type vendor_dlsc_data_file, file_type, data_file_type;
+
+# ddi image
+userdebug_or_eng(`
+type vendor_ddi_file, file_type, data_file_type;
+')
