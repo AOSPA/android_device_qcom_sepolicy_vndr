@@ -290,3 +290,8 @@ type vendor_qnicorn_data_file, file_type, data_file_type;
 
 # lifetime_write_kbytes from kernel
 type vendor_sysfs_fs_ext4, fs_type, sysfs_type;
+
+# ddi image
+userdebug_or_eng(`
+type vendor_ddi_file, file_type, data_file_type;
+')
