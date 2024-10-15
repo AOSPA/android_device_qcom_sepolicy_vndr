@@ -26,3 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 dontaudit mediaprovider vendor_hal_perf2_service:service_manager find;
+dontaudit mediaprovider vendor_hal_perf_hwservice:hwservice_manager find;

@@ -59,3 +59,5 @@ hal_attribute_service(vendor_hal_qccvndhal, vendor_hal_qccvndhal_service)
 #to avoid an avc denial
 #avc: denied { call } for scontext=u:r:vendor_qccvendor:s0 tcontext=u:r:servicemanager:s0 tclass=binder permissive=0
 binder_call(vendor_qccvendor, servicemanager)
+
+allow vendor_qccvendor mnt_vendor_file:dir search;
