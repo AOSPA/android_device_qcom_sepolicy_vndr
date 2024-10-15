@@ -56,6 +56,13 @@ allowxperm vendor_ssgtzd self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctl
 allow vendor_ssgtzd vendor_dmabuf_qseecom_ta_heap_device:chr_file r_file_perms;
 vndbinder_use(vendor_ssgtzd)
 
+# Allow to set capability to block suspend and resume from suspend/sleep to wake up
+# state using wake_alarm.
+allow vendor_ssgtzd self:capability2 { block_suspend wake_alarm };
+
+# Allow access to write to wake_lock file under /sys/power/
+allow vendor_ssgtzd sysfs_wake_lock:file { append open };
+
 #Allow ssgtzd to access servicemanager
 binder_call(vendor_ssgtzd, servicemanager)
 #Allow ssgtzd to access vndbinder_use

@@ -46,3 +46,4 @@ get_prop(vendor_adsprpcd, vendor_adsprpc_prop)
 allow vendor_adsprpcd vendor_persist_sensors_file:dir create_dir_perms;
 allow vendor_adsprpcd vendor_persist_sensors_file:file create_file_perms;
 allow vendor_adsprpcd mnt_vendor_file:dir r_dir_perms;
+allow vendor_adsprpcd device:dir { read watch };

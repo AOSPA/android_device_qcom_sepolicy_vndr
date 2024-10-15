@@ -45,3 +45,6 @@ allow appdomain vendor_npu_device:chr_file r_file_perms;
 allow { appdomain -isolated_app_all -coredomain } vendor_dmabuf_system_heap_device:chr_file r_file_perms;
 
 dontaudit appdomain vendor_hal_qspmhal_hwservice:hwservice_manager find;
+
+# Restrict access to non-secure fastrpc device for untrusted applications
+allow appdomain vendor_qdsp_device:chr_file {ioctl read};
