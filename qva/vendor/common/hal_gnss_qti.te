@@ -46,4 +46,4 @@ userdebug_or_eng(`
 allow hal_gnss self:qipcrtr_socket create_socket_perms_no_ioctl;
 
 # qhdc sdk
-hal_client_domain(vendor_hal_gnss_qti, vendor_hal_qms_qti)
+qhdc_sdk_use(vendor_hal_gnss_qti)

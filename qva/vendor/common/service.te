@@ -88,3 +88,4 @@ type vendor_hal_qseecom_service,         hal_service_type, protected_service, se
 type hal_wificfr_service,                hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qteeconnector_service,   hal_service_type, protected_service, service_manager_type;
 type vendor_hal_qspa_service,           hal_service_type, protected_service, service_manager_type;
+type vendor_qms_service, service_manager_type;
