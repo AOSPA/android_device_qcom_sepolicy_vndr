@@ -1,0 +1,15 @@
+[1mdiff --cc generic/vendor/common/bootanim.te[m
+[1mindex b05feb7d,41ffc9ed..00000000[m
+[1m--- a/generic/vendor/common/bootanim.te[m
+[1m+++ b/generic/vendor/common/bootanim.te[m
+[36m@@@ -36,8 -32,5 +36,9 @@@[m [mallow bootanim hwservicemanager:binder [m
+  # this denial on phones since this functionality is not used.[m
+  dontaudit bootanim system_data_file:dir read;[m
+  [m
+[32m+ dontaudit bootanim vendor_hal_qspmhal_default:binder call;[m
+  dontaudit bootanim vendor_hal_qspmhal_hwservice:hwservice_manager find;[m
+[32m +dontaudit bootanim vendor_hal_qspmhal_service:service_manager find;[m
+[32m +[m
+[32m +#Allow read access to vendor_display_prop[m
+[31m- get_prop(bootanim, vendor_display_prop)[m
+[32m++get_prop(bootanim, vendor_display_prop)[m
