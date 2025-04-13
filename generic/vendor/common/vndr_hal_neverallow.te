@@ -57,6 +57,7 @@ neverallow {
   -vendor_qms
   -vendor_hal_imsrtp
   -vendor_cacertservice_app
+  -vendor_hal_dpmQmiMgr
   userdebug_or_eng(` -vendor_hal_diaghal')
   userdebug_or_eng(` -vendor_qtiloopback_native')
   userdebug_or_eng(` -vendor_wifimyftmsvc')
