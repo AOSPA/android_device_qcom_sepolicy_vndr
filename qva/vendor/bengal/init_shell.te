@@ -1,0 +1,10 @@
+#Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+#SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# allow to read aon related properties
+get_prop(vendor_qti_init_shell, vendor_qc_aon_prop)
+
+#for vendor_qti_init userdebug
+userdebug_or_eng(`
+    allow vendor_qti_init_shell vendor_qti_init_shell:lockdown { integrity };
+')
