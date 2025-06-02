@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea16e2ed_cc7f46aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2025-06-02T06:55:04Z",
+      "side": 1,
+      "message": "would be nice if you stripped off any unused cruft, like cec/hdmi or debug policies, it can be in a seperate patch if you want to keep this a clean import",
+      "revId": "2a271927d783e3266f906fbd8e8a474d1a0b4ea5",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
