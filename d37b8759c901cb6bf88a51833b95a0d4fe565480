@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a52d9e3e_c1eadb07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2025-12-19T13:10:51Z",
+      "side": 1,
+      "message": "un-breaks AGPS on phone2, waiting for confirmation on xuanyuan",
+      "revId": "d37b8759c901cb6bf88a51833b95a0d4fe565480",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
