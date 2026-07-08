@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65542a75_412a1873",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2026-07-08T12:05:48Z",
+      "side": 1,
+      "message": "can you add the 2/2 of this change to qcom/common?",
+      "revId": "5f459b57952c7d7b4b4df70fe697e70b823100ae",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
