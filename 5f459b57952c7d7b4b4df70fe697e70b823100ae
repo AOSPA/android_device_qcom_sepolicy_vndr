@@ -16,6 +16,24 @@
       "message": "can you add the 2/2 of this change to qcom/common?",
       "revId": "5f459b57952c7d7b4b4df70fe697e70b823100ae",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d852787c_412dca4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001176
+      },
+      "writtenOn": "2026-07-08T18:23:16Z",
+      "side": 1,
+      "message": "wdym? it\u0027s just moved to device/qcom/sepolicy",
+      "parentUuid": "65542a75_412a1873",
+      "revId": "5f459b57952c7d7b4b4df70fe697e70b823100ae",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
